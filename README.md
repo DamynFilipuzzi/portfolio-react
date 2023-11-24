@@ -1,3 +1,9 @@
+# Notes on Pushing Changes to AWS S3 With Cloudfront
+1. npm run build - Builds html, js, and css and stores in ./dist dir
+2. npm run sync - Pushes all changes build to s3 bucket.
+3. npm run invalidate - Forces Cloudfront to update the cache
+
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
