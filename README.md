@@ -3,7 +3,7 @@
 2. `npm run sync` - Pushes all changes build to s3 bucket.
 3. `npm run invalidate` - Forces Cloudfront to update the cache
 
-## **todo:**
+## **Todo:**
 - [] Replace npm commands with a batch script to simplify process.
 - [] 
 
