@@ -24,10 +24,10 @@ jobs:
           aws-region: us-west-1
       - name: Push Build
         env:
-          distribution_id: $ {{ secrets.DISTRIBUTION_ID }}
+          distribution-id: $ {{ secrets.DISTRIBUTION_ID }}
         run: |
           aws s3 sync ./dist s3://damyn.me/
-          aws cloudfront create-invalidation --distribution-id ${{ distribution_id }} --paths /*
+          aws cloudfront create-invalidation --distribution-id "$distribution-id" --paths /*
           
           
     
