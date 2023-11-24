@@ -4,7 +4,7 @@
 3. `npm run invalidate` - Forces Cloudfront to update the cache
 
 ## **Todo:**
-- [] Replace npm commands with a batch script to simplify server upload process.
+- [] Replace npm commands with a bash script to simplify the server upload process.
 - [] 
 
 # React + Vite
