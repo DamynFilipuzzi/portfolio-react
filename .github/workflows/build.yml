@@ -27,7 +27,7 @@ jobs:
           distribution-id: $ {{ secrets.DISTRIBUTION_ID }}
         run: |
           aws s3 sync ./dist s3://damyn.me/
-          aws cloudfront create-invalidation --distribution-id "$distribution-id" --paths /*
+          aws cloudfront create-invalidation --distribution-id "%distribution-id" --paths /*
           
           
     
