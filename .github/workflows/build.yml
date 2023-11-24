@@ -23,12 +23,9 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-west-1
       - name: Push Build
-      - shell: bash
-        env: 
-          DISTRIBUTION_ID: ${{ secrets.distribution_id }}
         run: |
           aws s3 sync ./dist s3://damyn.me/
-          aws cloudfront create-invalidation --distribution-id "$DISTRIBUTION_ID" --paths /*
+          aws cloudfront create-invalidation --distribution-id ${{ DISTRIBUTION_ID }} --paths /*
           
           
     
