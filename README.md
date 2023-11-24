@@ -5,10 +5,10 @@
 
 ## **Todo:**
 - [x] Set up AWS S3 Bucket with CloudFront.
-- [] Replace npm commands with a bash script to simplify the server upload process.
-- [] Recreate/improve upon original portfolio project.
-- [] (Maybe) Create a togglable dark and light mode that initially renders the site depending on the system preset.
-- [] (Maybe) Host additional projects using AWS to show live examples of other work.
+- [ ] Replace npm commands with a bash script to simplify the server upload process.
+- [ ] Recreate/improve upon original portfolio project.
+- [ ] (Maybe) Create a togglable dark and light mode that initially renders the site depending on the system preset.
+- [ ] (Maybe) Host additional projects using AWS to show live examples of other work.
 
 # React + Vite
 
