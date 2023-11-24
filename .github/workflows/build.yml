@@ -25,7 +25,7 @@ jobs:
       - name: Push Build and invalite old Cache
         run: |
           aws s3 sync ./dist s3://damyn.me/
-          aws cloudfront create-invalidation --distribution-id EA3MYV3JW2XY4  --paths /*
+          aws cloudfront create-invalidation --distribution-id EA3MYV3JW2XY4  --paths "/*"
           
           
     
