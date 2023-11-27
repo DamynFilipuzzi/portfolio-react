@@ -1,12 +1,9 @@
-# Notes on Pushing Changes to AWS S3 With Cloudfront
-1. `npm run build` - Builds html, js, and css and stores in ./dist dir
-2. `npm run sync` - Pushes all changes build to s3 bucket.
-3. `npm run invalidate` - Forces Cloudfront to update the cache
+# Damyn Filipuzzi Portfolio
 
 
 ## **Todo:**
 - [x] Set up AWS S3 Bucket with CloudFront.
-- [ ] Set up CI/CD Pipeline. (**Alternatively**) Replace npm commands with a bash script to simplify the server upload process.
+- [x] Set up CI/CD Pipeline.
 - [ ] Recreate/improve upon original portfolio project.
 - [ ] (Maybe) Create a togglable dark and light mode that initially renders the site depending on the system preset.
 - [ ] (Maybe) Host additional projects using AWS to show live examples of other work.
