@@ -1,3 +1,5 @@
+[![Build and Deploy](https://github.com/DamynFilipuzzi/portfolio-react/actions/workflows/build.yml/badge.svg)](https://github.com/DamynFilipuzzi/portfolio-react/actions/workflows/build.yml)
+
 # Damyn Filipuzzi Portfolio
 
 
