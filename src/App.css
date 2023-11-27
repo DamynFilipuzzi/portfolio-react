@@ -1,10 +1,10 @@
 .content {
-    margin-left: 20%;
-    margin-right: 20%;
+    margin-left: 15%;
+    margin-right: 15%;
     height: 95vh;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
-    background-color: rgb(33, 36, 35);
+    background-color: #222222a8;
 }
 
 .card {

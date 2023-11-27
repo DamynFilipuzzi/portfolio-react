@@ -8,7 +8,9 @@ const Navbar = () => {
                 <div className="container">
                     <div className="logo-container">
                         <div className="logo">
-                            <img src={logo} alt="Damyn-Logo" />
+                            <a href="#">
+                                <img src={logo} alt="Damyn-Logo" />
+                            </a>
                         </div>
                         <div className="logo-text">
                             <h2>
@@ -19,17 +21,15 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="nav-items">
-                        <ul>
-                            <li>
-                                <a href="#">About</a>
-                            </li>
-                            <li>
-                                <a href="#">Portfolio</a>
-                            </li>
-                            <li>
-                                <a href="#">Contact</a>
-                            </li>
-                        </ul>
+                        <div>
+                            <a href="#">About</a>
+                        </div>
+                        <div>
+                            <a href="#">Portfolio</a>
+                        </div>
+                        <div>
+                            <a href="#">Contact</a>
+                        </div>
                     </div>
                 </div>
             </nav>
