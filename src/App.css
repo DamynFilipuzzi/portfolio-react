@@ -4,9 +4,15 @@
     height: 95vh;
     padding: 0;
     font-family: "Times New Roman", Times, serif;
-    background-color: #222222a8;
+    background-color: #1a1a1a;
 }
 
 .card {
     padding: 2em;
+}
+
+@media (max-width: 600px) {
+    .content {
+        margin: 0;
+    }
 }

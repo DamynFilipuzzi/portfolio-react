@@ -1,7 +1,15 @@
+import { useState } from "react";
 import logo from "../assets/favicon.ico";
+import hamburger from "../assets/hamburger.svg";
 import "../components/Navbar.css";
 
 const Navbar = () => {
+    const [showNavbar, setShowNavbar] = useState(false);
+
+    const handleShowNavbar = () => {
+        setShowNavbar(!showNavbar);
+    };
+
     return (
         <>
             <nav className="navbar">
@@ -20,7 +28,10 @@ const Navbar = () => {
                             </h2>
                         </div>
                     </div>
-                    <div className="nav-items">
+                    <div className="menu-icon" onClick={handleShowNavbar}>
+                        <img className="img-ham" width={40} src={hamburger} />
+                    </div>
+                    <div className={`nav-items  ${showNavbar && "active"}`}>
                         <div>
                             <a href="#">About</a>
                         </div>
