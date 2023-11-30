@@ -7,18 +7,11 @@ import Team from "../assets/team.svg";
 function About() {
     return (
         <>
-            <div className="content p-4">
-                <h2 className="text-center text-3xl underline">About Me</h2>
-                <div className="mt-10 max-w-lg mx-auto flex flex-row bg-slate-800 rounded-xl overflow-hidden shadow-md ">
-                    <div className="basis-1/4 md:shrink-0">
-                        <img
-                            className="h-56 w-full object-cover md:h-full md:w-48"
-                            src={Portrait}
-                            alt="Portfolio Picture"
-                        />
-                    </div>
-                    <div className="basis-3/4">
-                        <p className="text-slate-300 text-md sm:text-sm m-5 text-left">
+            <div className="content p-4" id="about">
+                <h2 className="text-center text-4xl font-bold">About Me</h2>
+                <div className="mt-5 max-w-2xl mx-auto flex flex-row bg-slate-800 rounded-xl overflow-hidden shadow-lg">
+                    <div className="basis-3/4 align-middle">
+                        <p className="text-slate-300 text-lg sm:text-sm m-5 text-left">
                             Hello! I'm Damyn, a passionate computer science
                             graduate with a year of hands-on experience in the
                             dynamic world of full-stack web development. My
@@ -28,20 +21,27 @@ function About() {
                             and MySQL.
                         </p>
                     </div>
+                    <div className="basis-1/4 md:shrink-0">
+                        <img
+                            className="h-56 w-full object-cover md:h-full md:w-48"
+                            src={Portrait}
+                            alt="Portfolio-Picture"
+                        />
+                    </div>
                 </div>
 
                 <div className="mb-5 flex flex-wrap justify-center">
                     <div className="max-w-sm mx-5 mt-10 bg-white dark:bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
                         <div className="text-center">
-                            <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                            <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                 <img
-                                    className="h-12 w-12"
+                                    className="h-16 w-16"
                                     src={Computer}
-                                    alt="Computer Image"
+                                    alt="Computer-Image"
                                 />
                             </span>
                         </div>
-                        <h3 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight text-center">
+                        <h3 className="text-white mt-5 text-base font-medium tracking-tight text-center">
                             Full-Stack Proficiency
                         </h3>
                         <p className="text-slate-300 mt-2 text-md sm:text-sm">
@@ -54,15 +54,15 @@ function About() {
                     </div>
                     <div className="max-w-sm mx-5 mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
                         <div className="text-center">
-                            <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                            <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                 <img
-                                    className="h-12 w-12"
+                                    className="h-16 w-16"
                                     src={Idea}
-                                    alt="Computer Image"
+                                    alt="Lightbulb-Image"
                                 />
                             </span>
                         </div>
-                        <h3 className="text-white mt-5 text-base font-medium tracking-tight">
+                        <h3 className="text-white mt-5 text-base font-medium tracking-tight text-center">
                             Innovative Problem Solver
                         </h3>
                         <p className="text-slate-300 mt-2 text-md sm:text-sm">
@@ -75,15 +75,15 @@ function About() {
                     </div>
                     <div className="max-w-sm mx-5 mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
                         <div className="text-center">
-                            <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-md shadow-lg">
+                            <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                 <img
-                                    className="h-12 w-12"
+                                    className="h-16 w-16"
                                     src={Team}
-                                    alt="Computer Image"
+                                    alt="Team-Image"
                                 />
                             </span>
                         </div>
-                        <h3 className="text-white mt-5 text-base font-medium tracking-tight">
+                        <h3 className="text-white mt-5 text-base font-medium tracking-tight text-center">
                             Collaborative Team Player
                         </h3>
                         <p className="text-slate-300 mt-2 text-md sm:text-sm">

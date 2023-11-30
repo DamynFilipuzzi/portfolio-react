@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar">
+            <nav className="navbar sticky top-0 ">
                 <div className="container">
                     <div className="logo-container">
                         <div className="logo">
@@ -37,14 +37,14 @@ const Navbar = () => {
                         />
                     </div>
                     <div className={`nav-items  ${showNavbar && "active"}`}>
-                        <div>
-                            <a href="#">About</a>
+                        <div onClick={handleShowNavbar}>
+                            <a href="#about">About</a>
                         </div>
-                        <div>
-                            <a href="#">Portfolio</a>
+                        <div onClick={handleShowNavbar}>
+                            <a href="#projects">Projects</a>
                         </div>
-                        <div>
-                            <a href="#">Contact</a>
+                        <div onClick={handleShowNavbar}>
+                            <a href="#contact">Contact</a>
                         </div>
                     </div>
                 </div>
