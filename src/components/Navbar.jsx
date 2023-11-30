@@ -21,7 +21,7 @@ const Navbar = () => {
                             </a>
                         </div>
                         <div className="logo-text">
-                            <h2>
+                            <h2 className="text-2xl">
                                 <a className="logo-text-header" href="#">
                                     Damyn Filipuzzi
                                 </a>
@@ -29,7 +29,12 @@ const Navbar = () => {
                         </div>
                     </div>
                     <div className="menu-icon" onClick={handleShowNavbar}>
-                        <img className="img-ham" width={40} src={hamburger} />
+                        <img
+                            className="img-ham"
+                            width={40}
+                            src={hamburger}
+                            alt="hamburger-icon"
+                        />
                     </div>
                     <div className={`nav-items  ${showNavbar && "active"}`}>
                         <div>
