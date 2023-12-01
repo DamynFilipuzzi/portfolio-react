@@ -61,20 +61,16 @@ function Projects() {
                                         Project Description
                                     </h2>
                                     <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                                        project description hot desking admin
-                                        Panel
+                                        Project description for hot desking
+                                        admin Panel
                                     </p>
                                     <h2 className="text-left text-2xl font-bold">
                                         Video Demonstration
                                     </h2>
                                     <iframe
-                                        width="560"
-                                        height="315"
+                                        className="w-full aspect-video"
                                         src="https://www.youtube.com/embed/eOPJkVcQDIw?si=NcI5INAdbcH5eP7Z"
                                         title="YouTube video player"
-                                        frameborder="0"
-                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                        allowfullscreen
                                     ></iframe>
                                 </AccordionContent>
                             </AccordionItem>
