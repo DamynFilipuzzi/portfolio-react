@@ -15,12 +15,18 @@ const Navbar = () => {
             <nav className="navbar sticky top-0 ">
                 <div className="container">
                     <div className="logo-container">
-                        <div className="logo">
+                        <div
+                            className="logo"
+                            onClick={showNavbar ? handleShowNavbar : null}
+                        >
                             <a href="#">
                                 <img src={logo} alt="Damyn-Logo" />
                             </a>
                         </div>
-                        <div className="logo-text">
+                        <div
+                            className="logo-text"
+                            onClick={showNavbar ? handleShowNavbar : null}
+                        >
                             <h2 className="text-2xl">
                                 <a className="logo-text-header" href="#">
                                     Damyn Filipuzzi
@@ -37,13 +43,16 @@ const Navbar = () => {
                         />
                     </div>
                     <div className={`nav-items  ${showNavbar && "active"}`}>
-                        <div onClick={handleShowNavbar}>
+                        <div onClick={showNavbar ? handleShowNavbar : null}>
                             <a href="#about">About</a>
                         </div>
-                        <div onClick={handleShowNavbar}>
+                        <div onClick={showNavbar ? handleShowNavbar : null}>
                             <a href="#projects">Projects</a>
                         </div>
-                        <div onClick={handleShowNavbar}>
+                        <div onClick={showNavbar ? handleShowNavbar : null}>
+                            <a href="#resume">Resume</a>
+                        </div>
+                        <div onClick={showNavbar ? handleShowNavbar : null}>
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
