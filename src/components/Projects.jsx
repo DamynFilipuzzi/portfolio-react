@@ -57,13 +57,24 @@ function Projects() {
                                     </h1>
                                 </AccordionTrigger>
                                 <AccordionContent>
-                                    Yes. It comes with default styles that
-                                    matches the other components&apos;
-                                    aesthetic.
+                                    <h2 className="text-left text-2xl font-bold">
+                                        Project Description
+                                    </h2>
+                                    <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
+                                        project description hot desking admin
+                                        Panel
+                                    </p>
+                                    <h2 className="text-left text-2xl font-bold">
+                                        Video Demonstration
+                                    </h2>
                                     <iframe
-                                        className="w-full aspect-video"
-                                        src="https://youtu.be/eOPJkVcQDIw"
+                                        width="560"
+                                        height="315"
+                                        src="https://www.youtube.com/embed/eOPJkVcQDIw?si=NcI5INAdbcH5eP7Z"
+                                        title="YouTube video player"
                                         frameborder="0"
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                        allowfullscreen
                                     ></iframe>
                                 </AccordionContent>
                             </AccordionItem>
