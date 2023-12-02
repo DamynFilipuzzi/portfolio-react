@@ -11,6 +11,8 @@
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
     background-color: #0f0f14;
+    background-image: url("/src/assets/bg-pattern-dark1.svg");
+    background-size: auto;
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -29,4 +31,10 @@ body {
 html {
     /* height of sticky header */
     scroll-padding-top: 60px;
+}
+
+@media (max-width: 760px) {
+    :root {
+        background-image: url("/src/assets/bg-pattern-dark2.svg");
+    }
 }

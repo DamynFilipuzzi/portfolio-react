@@ -9,30 +9,30 @@ function About() {
     return (
         <>
             <main className="about" id="about">
-                <div className="content-opposite p-4 m-4">
+                <div className="p-8 max-w-sm mx-auto">
                     <h1 className="text-center text-4xl font-bold">About Me</h1>
                 </div>
 
-                <div className="p-4 bg-back-primary">
-                    <div class="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl hover:scale-110 transition-all duration-500">
-                        <div class="custom:flex">
-                            <div class="custom:shrink-0">
+                <div className="p-4">
+                    <div className="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl hover:scale-110 transition-all duration-500">
+                        <div className="custom:flex">
+                            <div className="custom:shrink-0">
                                 <img
-                                    class="h-72 w-full object-cover custom:h-full custom:w-48 custom:hidden visible custom:invisible"
+                                    className="h-72 w-full object-cover custom:h-full custom:w-48 custom:hidden visible custom:invisible"
                                     src={Portrait2}
                                     alt="Portfolio Portrait 2"
                                 />
                                 <img
-                                    class="h-64 w-full object-cover custom:h-full custom:w-48 hidden custom:visible invisible custom:inline-flex"
+                                    className="h-64 w-full object-cover custom:h-full custom:w-48 hidden custom:visible invisible custom:inline-flex"
                                     src={Portrait1}
                                     alt="Portfolio Portrait 1"
                                 />
                             </div>
-                            <div class="p-8">
-                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                            <div className="p-8">
+                                <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
                                     Hello! &#128515;
                                 </div>
-                                <p class="mt-2 text-slate-300 text-md sm:text-sm">
+                                <p className="mt-2 text-slate-300 text-md sm:text-sm">
                                     I'm Damyn, a passionate computer science
                                     graduate with a year of hands-on experience
                                     in the dynamic world of full-stack web

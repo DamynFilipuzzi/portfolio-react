@@ -12,12 +12,12 @@ function Projects() {
     return (
         <>
             <div className="projects" id="projects">
-                <div className="content-opposite p-4 m-4">
+                <div className="p-8 max-w-sm mx-auto">
                     <h1 className="text-center text-4xl font-bold">
                         Projects I've worked on
                     </h1>
                 </div>
-                <div className="p-4 bg-back-primary">
+                <div className="p-4">
                     <div className="p-4 m-5 max-w-5xl mx-auto flex flex-row bg-slate-800 rounded-md overflow-hidden shadow-xl">
                         <Accordion
                             type="single"
@@ -27,12 +27,12 @@ function Projects() {
                         >
                             <AccordionItem value="item-1">
                                 <AccordionTrigger>
-                                    <h1 className="text-left text-2xl font-bold">
+                                    <h1 className="text-left text-2xl font-bold text-indigo-500">
                                         Curriculum MAP
                                     </h1>
                                 </AccordionTrigger>
                                 <AccordionContent>
-                                    <div className="p-5">
+                                    <div className="p-5 border-slate-600/25 border-2 rounded-md">
                                         <h2 className="text-left text-2xl font-bold">
                                             Project Description
                                         </h2>
@@ -53,7 +53,7 @@ function Projects() {
                                                 of pedagogical needs, or of
                                                 specific program requirements.
                                             </p>
-                                            <figure className="basis-1/3 sm:basis-full bg-indigo-500 rounded-md border-2 border-slate-900 shadow-xl text-white hover:text-cyan-200 hover:bg-indigo-700 transition duration-300 hover:shadow-2xl hover:scale-105">
+                                            <figure className="basis-1/3 sm:mx-auto sm:basis-full min-w-[40%] min-h-[40%] max-h-md max-w-md bg-indigo-500 rounded-md border-2 border-slate-900 shadow-xl text-white hover:text-cyan-200 hover:bg-indigo-700 transition duration-300 hover:shadow-2xl hover:scale-105">
                                                 <a
                                                     href="https://curriculum.ok.ubc.ca/"
                                                     target="_blank"
@@ -64,11 +64,8 @@ function Projects() {
                                                         alt="Image of the Curriculum MAPS UBC dashboard"
                                                         className="grayscale-[25%] hover:grayscale-0"
                                                     />
-                                                    <figcaption className="text-center">
-                                                        <p className="text-lg">
-                                                            Check out the live
-                                                            site.
-                                                        </p>
+                                                    <figcaption className="text-center text-lg">
+                                                        Check out the live site
                                                     </figcaption>
                                                 </a>
                                             </figure>
@@ -78,7 +75,7 @@ function Projects() {
                             </AccordionItem>
                             <AccordionItem value="item-2">
                                 <AccordionTrigger>
-                                    <h1 className="text-left text-2xl font-bold">
+                                    <h1 className="text-left text-2xl font-bold text-indigo-500">
                                         Hot Desking
                                     </h1>
                                 </AccordionTrigger>
@@ -102,7 +99,7 @@ function Projects() {
                             </AccordionItem>
                             <AccordionItem value="item-3">
                                 <AccordionTrigger>
-                                    <h1 className="text-left text-2xl font-bold">
+                                    <h1 className="text-left text-2xl font-bold text-indigo-500">
                                         Project #3
                                     </h1>
                                 </AccordionTrigger>
