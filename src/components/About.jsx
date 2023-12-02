@@ -1,5 +1,7 @@
 import "../components/About.css";
 import Portrait from "../assets/portrait.png";
+import Portrait1 from "../assets/portrait1.png";
+import Portrait2 from "../assets/portrait2.png";
 import Computer from "../assets/computer.svg";
 import Idea from "../assets/idea.svg";
 import Team from "../assets/team.svg";
@@ -11,32 +13,40 @@ function About() {
                 <div className="content-opposite p-4">
                     <h1 className="text-center text-4xl font-bold">About Me</h1>
                 </div>
+
                 <div className="p-4 bg-back-primary">
-                    <div className="mt-5 max-w-3xl mx-auto flex flex-row bg-slate-800 rounded-xl overflow-hidden shadow-lg">
-                        <div className="basis-3/4">
-                            <p className="text-white text-lg sm:text-sm m-2.5 text-left font-medium">
-                                Hello!
-                            </p>
-                            <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                                I'm Damyn, a passionate computer science
-                                graduate with a year of hands-on experience in
-                                the dynamic world of full-stack web development.
-                                My journey in the tech realm has led me to
-                                specialize in crafting seamless and efficient
-                                solutions.
-                            </p>
-                        </div>
-                        <div className="basis-1/4 md:shrink-0">
-                            <img
-                                className="h-56 w-full object-cover md:h-full md:w-48"
-                                src={Portrait}
-                                alt="Portfolio-Picture"
-                            />
+                    <div class="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl">
+                        <div class="custom:flex">
+                            <div class="custom:shrink-0">
+                                <img
+                                    class="h-72 w-full object-cover custom:h-full custom:w-48 custom:hidden visible custom:invisible"
+                                    src={Portrait2}
+                                    alt="Portfolio Portrait 2"
+                                />
+                                <img
+                                    class="h-64 w-full object-cover custom:h-full custom:w-48 hidden custom:visible invisible custom:inline-flex"
+                                    src={Portrait1}
+                                    alt="Portfolio Portrait 1"
+                                />
+                            </div>
+                            <div class="p-8">
+                                <div class="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                                    Hello! &#128515;
+                                </div>
+                                <p class="mt-2 text-slate-300 text-md sm:text-sm">
+                                    I'm Damyn, a passionate computer science
+                                    graduate with a year of hands-on experience
+                                    in the dynamic world of full-stack web
+                                    development. My journey in the tech realm
+                                    has led me to specialize in crafting
+                                    seamless and efficient solutions.
+                                </p>
+                            </div>
                         </div>
                     </div>
 
-                    <div className="mb-5 flex flex-wrap justify-center">
-                        <div className="max-w-sm mx-5 mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
+                    <div className="mb-5 flex flex-wrap space-x-10 sm:space-x-0 justify-center">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
                             <div className="text-center">
                                 <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
@@ -46,7 +56,7 @@ function About() {
                                     />
                                 </span>
                             </div>
-                            <h3 className="text-white mt-5 text-base font-medium tracking-tight text-center">
+                            <h3 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
                                 Full-Stack Proficiency
                             </h3>
                             <p className="text-slate-300 mt-2 text-md sm:text-sm">
@@ -58,7 +68,7 @@ function About() {
                                 end-to-end solutions.
                             </p>
                         </div>
-                        <div className="max-w-sm mx-5 mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
                             <div className="text-center">
                                 <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
@@ -68,7 +78,7 @@ function About() {
                                     />
                                 </span>
                             </div>
-                            <h3 className="text-white mt-5 text-base font-medium tracking-tight text-center">
+                            <h3 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
                                 Innovative Problem Solver
                             </h3>
                             <p className="text-slate-300 mt-2 text-md sm:text-sm">
@@ -79,7 +89,7 @@ function About() {
                                 complexities with creativity and precision.
                             </p>
                         </div>
-                        <div className="max-w-sm mx-5 mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
                             <div className="text-center">
                                 <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
@@ -89,7 +99,7 @@ function About() {
                                     />
                                 </span>
                             </div>
-                            <h3 className="text-white mt-5 text-base font-medium tracking-tight text-center">
+                            <h3 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
                                 Collaborative Team Player
                             </h3>
                             <p className="text-slate-300 mt-2 text-md sm:text-sm">
