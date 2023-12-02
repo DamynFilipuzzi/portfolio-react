@@ -1,5 +1,4 @@
 import "../components/About.css";
-import Portrait from "../assets/portrait.png";
 import Portrait1 from "../assets/portrait1.png";
 import Portrait2 from "../assets/portrait2.png";
 import Computer from "../assets/computer.svg";
@@ -10,12 +9,12 @@ function About() {
     return (
         <>
             <main className="about" id="about">
-                <div className="content-opposite p-4">
+                <div className="content-opposite p-4 m-4">
                     <h1 className="text-center text-4xl font-bold">About Me</h1>
                 </div>
 
                 <div className="p-4 bg-back-primary">
-                    <div class="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl">
+                    <div class="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl hover:scale-110 transition-all duration-500">
                         <div class="custom:flex">
                             <div class="custom:shrink-0">
                                 <img
@@ -46,7 +45,7 @@ function About() {
                     </div>
 
                     <div className="mb-5 flex flex-wrap space-x-10 sm:space-x-0 justify-center">
-                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl hover:scale-110 transition-all duration-500">
                             <div className="text-center">
                                 <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
@@ -68,7 +67,7 @@ function About() {
                                 end-to-end solutions.
                             </p>
                         </div>
-                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl hover:scale-110 transition-all duration-500">
                             <div className="text-center">
                                 <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
@@ -89,7 +88,7 @@ function About() {
                                 complexities with creativity and precision.
                             </p>
                         </div>
-                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl hover:scale-110 transition-all duration-500">
                             <div className="text-center">
                                 <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img

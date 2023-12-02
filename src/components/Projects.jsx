@@ -12,7 +12,7 @@ function Projects() {
     return (
         <>
             <div className="projects" id="projects">
-                <div className="content-opposite p-4">
+                <div className="content-opposite p-4 m-4">
                     <h1 className="text-center text-4xl font-bold">
                         Projects I've worked on
                     </h1>
