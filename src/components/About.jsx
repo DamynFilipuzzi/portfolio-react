@@ -10,7 +10,9 @@ function About() {
         <>
             <main className="about" id="about">
                 <div className="p-8 max-w-sm mx-auto">
-                    <h1 className="text-center text-4xl font-bold">About Me</h1>
+                    <h1 className="-skew-y-6 text-center text-4xl font-bold bg-white text-black">
+                        About Me
+                    </h1>
                 </div>
 
                 <div className="p-4">
