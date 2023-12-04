@@ -157,7 +157,7 @@ function Projects() {
                                     className="w-full aspect-video"
                                     src="https://www.youtube.com/embed/eOPJkVcQDIw?si=NcI5INAdbcH5eP7Z"
                                     title="YouTube video player"
-                                    allowfullscreen="allowfullscreen"
+                                    allowFullScreen="allowfullscreen"
                                 ></iframe>
                             </AccordionContent>
                         </AccordionItem>
