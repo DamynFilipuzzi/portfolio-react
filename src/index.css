@@ -30,9 +30,3 @@ html {
     /* height of sticky header */
     scroll-padding-top: 60px;
 }
-
-/* @media (max-width: 760px) {
-    :root {
-        background-image: url("/src/assets/bg-pattern-dark2.svg");
-    }
-} */

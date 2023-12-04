@@ -39,6 +39,14 @@ module.exports = {
         extend: {
             colors: {
                 "back-primary": "#31313c",
+                laravel: "#F9322C",
+                php: "#4F5B93",
+                mysql: "#00758f",
+                js: "#efd81d",
+                jquery: "#78cff5",
+                html: "#d35c3b",
+                css: "#2f54e5",
+                ajax: "#3b89bf",
             },
             keyframes: {
                 "accordion-down": {

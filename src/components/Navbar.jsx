@@ -12,7 +12,7 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar sticky top-0">
+            <nav className="navbar sticky top-0 backdrop-blur-xl">
                 <div className="container">
                     <div className="logo-container">
                         <div

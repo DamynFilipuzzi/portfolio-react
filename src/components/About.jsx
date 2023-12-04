@@ -1,9 +1,8 @@
 import "../components/About.css";
-import Portrait1 from "../assets/portrait1.png";
-import Portrait2 from "../assets/portrait2.png";
+import Portrait3 from "../assets/portrait3.png";
 import Computer from "../assets/computer.svg";
-import Idea from "../assets/idea.svg";
-import Team from "../assets/team.svg";
+import Web from "../assets/web.svg";
+import Sql from "../assets/sql.svg";
 
 function About() {
     return (
@@ -16,22 +15,17 @@ function About() {
                 </div>
 
                 <div className="p-4">
-                    <div className="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl hover:scale-110 transition-all duration-500">
+                    <div className="max-w-sm mt-5 mx-auto bg-slate-800 rounded-xl shadow-xl overflow-hidden custom:max-w-2xl sm:hover:scale-100 hover:scale-110 transition-all duration-500">
                         <div className="custom:flex">
                             <div className="custom:shrink-0">
                                 <img
-                                    className="h-72 w-full object-cover custom:h-full custom:w-48 custom:hidden visible custom:invisible"
-                                    src={Portrait2}
-                                    alt="Portfolio Portrait 2"
-                                />
-                                <img
-                                    className="h-64 w-full object-cover custom:h-full custom:w-48 hidden custom:visible invisible custom:inline-flex"
-                                    src={Portrait1}
+                                    className="h-72 w-full object-cover object-top custom:h-full custom:w-48 custom:inline-flex"
+                                    src={Portrait3}
                                     alt="Portfolio Portrait 1"
                                 />
                             </div>
                             <div className="p-8">
-                                <div className="uppercase tracking-wide text-sm text-indigo-500 font-semibold">
+                                <div className="p-text uppercase tracking-wide text-lg text-indigo-500 font-semibold">
                                     Hello! &#128515;
                                 </div>
                                 <p className="mt-2 text-slate-300 text-md sm:text-sm">
@@ -47,17 +41,17 @@ function About() {
                     </div>
 
                     <div className="mb-5 flex flex-wrap space-x-10 sm:space-x-0 justify-center">
-                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl hover:scale-110 transition-all duration-500">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl sm:hover:scale-100 hover:scale-110 transition-all duration-500">
                             <div className="text-center">
-                                <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
+                                <span className="p-text inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
-                                        className="h-16 w-16 hover:scale-110 transition-all duration-500"
+                                        className="h-16 w-16 sm:hover:scale-100 hover:scale-110 transition-all duration-500"
                                         src={Computer}
                                         alt="Computer-Image"
                                     />
                                 </span>
                             </div>
-                            <h3 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
+                            <h3 className="p-text uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
                                 Full-Stack Proficiency
                             </h3>
                             <p className="text-slate-300 mt-2 text-md sm:text-sm">
@@ -69,45 +63,44 @@ function About() {
                                 end-to-end solutions.
                             </p>
                         </div>
-                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl hover:scale-110 transition-all duration-500">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl sm:hover:scale-100 hover:scale-110 transition-all duration-500">
                             <div className="text-center">
-                                <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
+                                <span className="p-text inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
-                                        className="h-16 w-16 hover:scale-110 transition-all duration-500"
-                                        src={Idea}
+                                        className="h-16 w-16 sm:hover:scale-100 hover:scale-110 transition-all duration-500"
+                                        src={Web}
                                         alt="Lightbulb-Image"
                                     />
                                 </span>
                             </div>
                             <h3 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
-                                Innovative Problem Solver
+                                HTML & JavaScript
                             </h3>
                             <p className="text-slate-300 mt-2 text-md sm:text-sm">
-                                I thrive on challenges and view each project as
-                                an opportunity to create something impactful. My
-                                problem-solving skills are honed through
-                                real-world experiences, allowing me to navigate
-                                complexities with creativity and precision.
+                                Proficient in crafting responsive and dynamic
+                                user interfaces using HTML and JavaScript, I
+                                focus on delivering engaging and user-friendly
+                                experiences.
                             </p>
                         </div>
-                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl hover:scale-110 transition-all duration-500">
+                        <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl sm:hover:scale-100 hover:scale-110 transition-all duration-500">
                             <div className="text-center">
-                                <span className="inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
+                                <span className="p-text inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
                                     <img
-                                        className="h-16 w-16 hover:scale-110 transition-all duration-500"
-                                        src={Team}
+                                        className="h-16 w-16 sm:hover:scale-100 hover:scale-110 transition-all duration-500"
+                                        src={Sql}
                                         alt="Team-Image"
                                     />
                                 </span>
                             </div>
-                            <h3 className="uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
-                                Collaborative Team Player
+                            <h3 className="p-text uppercase tracking-wide text-sm text-indigo-500 font-semibold mt-5 text-center">
+                                Databases
                             </h3>
                             <p className="text-slate-300 mt-2 text-md sm:text-sm">
-                                Having worked in diverse teams, I understand the
-                                power of collaboration. I value open
-                                communication and believe that collective
-                                efforts lead to the most successful outcomes.
+                                My expertise extends across database management
+                                systems such as MySQL, where I excel in schema
+                                design, query optimization, and ensuring data
+                                integrity.
                             </p>
                         </div>
                     </div>
