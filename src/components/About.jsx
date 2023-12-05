@@ -30,11 +30,11 @@ function About() {
                                 </div>
                                 <p className="mt-2 text-slate-300 text-md sm:text-sm">
                                     I'm Damyn, a passionate computer science
-                                    graduate with a year of hands-on experience
-                                    in the dynamic world of full-stack web
-                                    development. My journey in the tech realm
-                                    has led me to specialize in crafting
-                                    seamless and efficient solutions.
+                                    graduate with over a year of hands-on
+                                    experience in the dynamic world of
+                                    full-stack web development. My journey in
+                                    the tech realm has led me to specialize in
+                                    crafting seamless and efficient solutions.
                                 </p>
                             </div>
                         </div>
