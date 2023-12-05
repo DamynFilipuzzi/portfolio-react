@@ -28,6 +28,7 @@ module.exports = {
             "2xl": { min: "1536px" },
 
             custom: "640px",
+            custom2: "840",
         },
         container: {
             center: true,

@@ -40,7 +40,7 @@ function About() {
                         </div>
                     </div>
 
-                    <div className="mb-5 flex flex-wrap space-x-10 sm:space-x-0 justify-center">
+                    <div className="mb-5 flex flex-wrap gap-x-10 sm:gap-x-0 justify-center">
                         <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl sm:hover:scale-100 hover:scale-110 transition-all duration-500">
                             <div className="text-center">
                                 <span className="p-text inline-flex items-center justify-center p-3 bg-indigo-500 rounded-xl shadow-lg">
