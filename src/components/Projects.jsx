@@ -1,6 +1,7 @@
 import "../components/Projects.css";
 import Curriculum from "../assets/curriculum-img.png";
 import { Badge } from "@/components/ui/badge";
+import Github from "../assets/github.svg";
 
 import {
     Accordion,
@@ -131,6 +132,37 @@ function Projects() {
                                                 and improving older designs
                                                 built by previous developers.
                                             </p>
+                                        </div>
+                                        <div className="col-start-1 col-end-7 sm:mb-2">
+                                            <h2 className="text-left text-2xl font-bold">
+                                                Links
+                                            </h2>
+                                            <ul className="list-disc space-y-2 m-2.5 text-lg sm:text-sm">
+                                                <li>
+                                                    <p>
+                                                        <a
+                                                            href="https://github.com/bohuie/curriculum/tree/master"
+                                                            target="_blank"
+                                                            rel="external"
+                                                            className="hover:text-cyan-200 text-cyan-500"
+                                                        >
+                                                            https://github.com/bohuie/curriculum/tree/master
+                                                        </a>
+                                                    </p>
+                                                </li>
+                                                <li>
+                                                    <p>
+                                                        <a
+                                                            href="https://curriculum.ok.ubc.ca/"
+                                                            target="_blank"
+                                                            rel="external"
+                                                            className="hover:text-cyan-200 text-cyan-500"
+                                                        >
+                                                            https://curriculum.ok.ubc.ca/
+                                                        </a>
+                                                    </p>
+                                                </li>
+                                            </ul>
                                         </div>
                                     </div>
                                 </div>
