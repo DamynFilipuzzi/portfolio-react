@@ -11,7 +11,7 @@ import {
 function Projects() {
     return (
         <>
-            <div className="projects" id="projects">
+            <section className="projects" id="projects">
                 <div className="p-8 max-w-sm mx-auto">
                     <h1 className="-skew-y-6 text-center text-4xl font-bold bg-white text-black">
                         Projects I've worked on
@@ -206,7 +206,7 @@ function Projects() {
                         </AccordionItem>
                     </Accordion>
                 </div>
-            </div>
+            </section>
         </>
     );
 }

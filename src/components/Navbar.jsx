@@ -12,8 +12,8 @@ const Navbar = () => {
 
     return (
         <>
-            <nav className="navbar sticky top-0 backdrop-blur-xl">
-                <div className="container">
+            <header className="navbar sticky top-0 backdrop-blur-xl">
+                <nav className="container">
                     <div className="logo-container">
                         <div
                             className="logo"
@@ -56,8 +56,8 @@ const Navbar = () => {
                             <a href="#contact">Contact</a>
                         </div>
                     </div>
-                </div>
-            </nav>
+                </nav>
+            </header>
         </>
     );
 };
