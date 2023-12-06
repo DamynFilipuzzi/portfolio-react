@@ -1,4 +1,3 @@
-import "../components/About.css";
 import Portrait3 from "../assets/portrait3.png";
 import Computer from "../assets/computer.svg";
 import Web from "../assets/web.svg";

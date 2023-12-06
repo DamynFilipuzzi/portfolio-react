@@ -1,4 +1,3 @@
-import "./App.css";
 import About from "./components/About.jsx";
 import Projects from "./components/Projects.jsx";
 import AnimatedBackground from "./components/AnimatedBackground";

@@ -1,7 +1,5 @@
-import "../components/Projects.css";
 import Curriculum from "../assets/curriculum-img.png";
 import { Badge } from "@/components/ui/badge";
-import Github from "../assets/github.svg";
 
 import {
     Accordion,
@@ -48,6 +46,9 @@ function Projects() {
                                                 <Badge variant="js">JS</Badge>
                                                 <Badge variant="jquery">
                                                     JQuery
+                                                </Badge>
+                                                <Badge variant="bootstrap">
+                                                    Bootstrap
                                                 </Badge>
                                                 <Badge variant="html">
                                                     HTML

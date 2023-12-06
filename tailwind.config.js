@@ -28,7 +28,7 @@ module.exports = {
             "2xl": { min: "1536px" },
 
             custom: "640px",
-            custom2: "840",
+            custom2: "840px",
         },
         container: {
             center: true,
@@ -40,6 +40,7 @@ module.exports = {
         extend: {
             colors: {
                 "back-primary": "#31313c",
+                footer: "#0f0f14",
                 laravel: "#F9322C",
                 php: "#4F5B93",
                 mysql: "#00758f",
@@ -48,6 +49,7 @@ module.exports = {
                 html: "#d35c3b",
                 css: "#2f54e5",
                 ajax: "#3b89bf",
+                bootstrap: "#702cf5",
             },
             keyframes: {
                 "accordion-down": {

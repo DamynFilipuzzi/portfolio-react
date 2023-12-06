@@ -19,6 +19,8 @@ const badgeVariants = cva(
                 html: "border-transparent bg-html/80 text-slate-50 hover:bg-html",
                 css: "border-transparent bg-css/80 text-slate-50 hover:bg-css",
                 ajax: "border-transparent bg-ajax/80 text-slate-50 hover:bg-ajax",
+                bootstrap:
+                    "border-transparent bg-bootstrap/80 text-slate-50 hover:bg-bootstrap",
             },
         },
         defaultVariants: {
