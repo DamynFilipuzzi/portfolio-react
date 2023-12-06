@@ -6,7 +6,7 @@ import Sql from "../assets/sql.svg";
 function About() {
     return (
         <>
-            <main className="about" id="about">
+            <section className="about" id="about">
                 <div className="p-8 max-w-sm mx-auto">
                     <h1 className="-skew-y-6 text-center text-4xl font-bold bg-white text-black">
                         About Me
@@ -104,7 +104,7 @@ function About() {
                         </div>
                     </div>
                 </div>
-            </main>
+            </section>
         </>
     );
 }
