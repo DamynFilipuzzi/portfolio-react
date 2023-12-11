@@ -11,16 +11,11 @@ function Resume() {
                 </div>
 
                 <div className="m-5 max-w-7xl h-[60rem] mx-auto bg-slate-800 ring-slate-900/5 rounded-lg overflow-hidden border-slate-800">
-                    <object
-                        data={ResumePDF}
-                        type="application/pdf"
+                    <embed
+                        src={ResumePDF}
                         className="w-full h-[60rem]"
-                    >
-                        <p>
-                            Unable to display PDF file.
-                            <a href="resume.pdf"> Download</a> instead.
-                        </p>
-                    </object>
+                        type="application/pdf"
+                    ></embed>
                 </div>
             </section>
         </>
