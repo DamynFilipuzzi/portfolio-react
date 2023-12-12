@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useState } from "react";
 import emailjs from "@emailjs/browser";
 
 import validator from "validator";
@@ -11,51 +12,90 @@ import { Label } from "@radix-ui/react-label";
 export const Contact = () => {
     const form = useRef();
     const { toast } = useToast();
+    const [failResults, setParagraphValue] = useState("");
+    const [showErrors, setErrors] = useState(false);
+
+    const handleErrors = () => {
+        setErrors(!showErrors);
+    };
 
     const onSubmit = (e) => {
         e.preventDefault();
 
+        let fail = false;
+        let failResponse = [];
+
         // Form Values Used for Data Validation
-        const name = form.current[1].value;
-        const email = form.current[2].value;
-        const title = form.current[3].value;
-        const msg = form.current[4].value;
+        const name = e.target.name.value;
+        const email = e.target.email.value;
+        const title = e.target.title.value;
+        const msg = e.target.message.value;
 
-        console.log(name, email, title, msg);
-
-        console.log("Is Email: " + validator.isEmail(email));
-        console.log("Is length >=2: " + validator.isLength(name, 2));
-        console.log("Is non-Numeric: " + !validator.isNumeric(name));
-        console.log("Is NOT Empty: " + !validator.isEmpty(name));
-
-        // emailjs
-        //     .sendForm(
-        //         "service_7z9f6av",
-        //         "template_ndoyuya",
-        //         form.current,
-        //         "YusSOw_TDB2VIYARa"
-        //     )
-        //     .then(
-        //         (result) => {
-        //             console.log(result.text);
-        //             e.target.reset();
-        //             toast({
-        //                 variant: "success",
-        //                 title: "Message Sent Successfully",
-        //                 description:
-        //                     "Thank you for you reaching out, I will try to get back to you as soon as possible!",
-        //             });
-        //         },
-        //         (error) => {
-        //             console.log(error.text);
-        //             // TODO ADD ERROR MSG
-        //             toast({
-        //                 variant: "destructive",
-        //                 title: "Uh oh! Something went wrong.",
-        //                 description: "There was a problem with your request, please refresh the page and try again.",
-        //             });
-        //         }
-        //     );
+        if (!validator.isLength(name, 2)) {
+            failResponse.push(
+                <li key={crypto.randomUUID()}>
+                    {"Your Name must be 2 or more characters long."}
+                </li>
+            );
+            fail = true;
+        }
+        if (!validator.isEmail(email)) {
+            failResponse.push(
+                <li key={crypto.randomUUID()}>
+                    {"You must enter a valid Email Address."}
+                </li>
+            );
+            fail = true;
+        }
+        if (validator.isEmpty(title)) {
+            failResponse.push(
+                <li key={crypto.randomUUID()}>
+                    {"Your Title cannot be empty."}
+                </li>
+            );
+            fail = true;
+        }
+        if (validator.isEmpty(msg)) {
+            failResponse.push(
+                <li key={crypto.randomUUID()}>
+                    {"Your Message cannot be empty."}
+                </li>
+            );
+            fail = true;
+        }
+        if (fail) {
+            setParagraphValue(failResponse);
+            showErrors ? null : handleErrors();
+        } else {
+            showErrors ? handleErrors() : null;
+            // send email using emailjs package
+            emailjs
+                .sendForm(
+                    "service_7z9f6av",
+                    "template_ndoyuya",
+                    form.current,
+                    "YusSOw_TDB2VIYARa"
+                )
+                .then(
+                    (result) => {
+                        e.target.reset();
+                        toast({
+                            variant: "success",
+                            title: "Message Sent Successfully",
+                            description:
+                                "Thank you for you reaching out, I will try to get back to you as soon as possible!",
+                        });
+                    },
+                    (error) => {
+                        toast({
+                            variant: "destructive",
+                            title: "Uh oh! Something went wrong.",
+                            description:
+                                "There was a problem with your request, please refresh the page and try again.",
+                        });
+                    }
+                );
+        }
     };
 
     return (
@@ -106,6 +146,13 @@ export const Contact = () => {
                                         placeholder="Leave a Message"
                                     />
                                 </div>
+                                {showErrors && (
+                                    <span className="bg-slate-900 rounded-lg border-white/20 border-2 p-6 col-span-2 place-self-center">
+                                        <ul className="text-sm text-red-600 list-disc">
+                                            {failResults}
+                                        </ul>
+                                    </span>
+                                )}
                                 <div className="col-span-2 place-self-center">
                                     <Button
                                         type="submit"

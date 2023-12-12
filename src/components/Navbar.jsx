@@ -42,7 +42,11 @@ const Navbar = () => {
                             alt="hamburger-icon"
                         />
                     </div>
-                    <div className={`nav-items  ${showNavbar && "active"}`}>
+                    <div
+                        className={`nav-items  ${
+                            showNavbar && "active"
+                        } backdrop-blur-xl`}
+                    >
                         <div onClick={showNavbar ? handleShowNavbar : null}>
                             <a href="#about">About</a>
                         </div>
