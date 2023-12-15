@@ -7,10 +7,10 @@ import Footer from "./components/Footer.jsx";
 import { Toaster } from "@/components/ui/toaster";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-    <React.StrictMode>
-        <Navbar />
-        <App />
-        <Toaster />
-        <Footer />
-    </React.StrictMode>
+  <React.StrictMode>
+    <Navbar />
+    <App />
+    <Toaster />
+    <Footer />
+  </React.StrictMode>
 );

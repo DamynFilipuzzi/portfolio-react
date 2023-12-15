@@ -5,17 +5,17 @@ import Resume from "./components/Resume.jsx";
 import { Contact } from "./components/Contact.jsx";
 
 function App() {
-    return (
-        <>
-            <main>
-                <AnimatedBackground />
-                <About />
-                <Projects />
-                <Resume />
-                <Contact />
-            </main>
-        </>
-    );
+  return (
+    <>
+      <main>
+        <AnimatedBackground />
+        <About />
+        <Projects />
+        <Resume />
+        <Contact />
+      </main>
+    </>
+  );
 }
 
 export default App;
