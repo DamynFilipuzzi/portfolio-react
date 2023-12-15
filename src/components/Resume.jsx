@@ -1,4 +1,4 @@
-import ResumePDF from "../assets/resume.pdf";
+import Pdf from "./Pdf";
 
 function Resume() {
   return (
@@ -11,11 +11,7 @@ function Resume() {
         </div>
 
         <div className="m-5 max-w-7xl h-[60rem] mx-auto bg-slate-800 ring-slate-900/5 rounded-lg overflow-hidden border-slate-800">
-          <embed
-            src={ResumePDF}
-            className="w-full h-[60rem]"
-            type="application/pdf"
-          ></embed>
+          <Pdf />
         </div>
       </section>
     </>
