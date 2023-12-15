@@ -147,6 +147,7 @@ export const Contact = () => {
         .then(
           (result) => {
             e.target.reset();
+            grecaptcha.reset();
             toast({
               variant: "success",
               title: "Message Sent Successfully",
@@ -155,12 +156,22 @@ export const Contact = () => {
             });
           },
           (error) => {
-            toast({
-              variant: "destructive",
-              title: "Uh oh! Something went wrong.",
-              description:
-                "There was a problem with your request, please refresh the page and try again.",
-            });
+            var response = grecaptcha.getResponse();
+            if (response.length == 0) {
+              toast({
+                variant: "destructive",
+                title: "Invalid ReCAPTCHA Response",
+                description:
+                  "Please make sure you tick off the 'I am not a robot' checkbox before you submit the contact form",
+              });
+            } else {
+              toast({
+                variant: "destructive",
+                title: "Uh oh! Something went wrong.",
+                description:
+                  "There was a problem with your request, please refresh the page and try again.",
+              });
+            }
           }
         );
     }
