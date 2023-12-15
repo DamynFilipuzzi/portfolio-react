@@ -254,6 +254,12 @@ export const Contact = () => {
                   </span>
                 )}
                 <div className="col-span-2 place-self-center">
+                  <div
+                    className="g-recaptcha"
+                    data-sitekey="6Lf6BjIpAAAAALmEEZpuI28moS8Q0zurI-0mxkcz"
+                  ></div>
+                </div>
+                <div className="col-span-2 place-self-center">
                   <Button type="submit" value="Send" variant="secondary">
                     Send
                   </Button>
