@@ -1,6 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import ReCAPTCHA from "react-google-recaptcha";
 
 import validator from "validator";
 import { Button } from "@/components/ui/button";
@@ -147,7 +148,6 @@ export const Contact = () => {
         .then(
           (result) => {
             e.target.reset();
-            grecaptcha.reset();
             toast({
               variant: "success",
               title: "Message Sent Successfully",
@@ -265,10 +265,7 @@ export const Contact = () => {
                   </span>
                 )}
                 <div className="col-span-2 place-self-center">
-                  <div
-                    className="g-recaptcha"
-                    data-sitekey="6Lf6BjIpAAAAALmEEZpuI28moS8Q0zurI-0mxkcz"
-                  ></div>
+                  <ReCAPTCHA sitekey="6Lf6BjIpAAAAALmEEZpuI28moS8Q0zurI-0mxkcz" />
                 </div>
                 <div className="col-span-2 place-self-center">
                   <Button type="submit" value="Send" variant="secondary">
