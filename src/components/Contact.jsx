@@ -148,6 +148,7 @@ export const Contact = () => {
         .then(
           (result) => {
             e.target.reset();
+            grecaptcha.reset();
             toast({
               variant: "success",
               title: "Message Sent Successfully",
