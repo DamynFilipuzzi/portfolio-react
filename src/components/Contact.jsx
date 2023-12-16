@@ -191,21 +191,21 @@ export const Contact = () => {
           <form ref={form} onSubmit={onSubmit}>
             <fieldset>
               <div className="grid grid-col-2 gap-4 w-full place-content-center p-4">
-                <div className="col-span-1 sm:col-span-2 sm:mx-auto">
+                <div className="col-span-1 sm:col-span-2 sm:mx-auto sm:w-full">
                   <Label htmlFor="name">Name</Label>
                   <Input
                     name="name"
-                    className="w-auto"
+                    className="w-auto sm:w-full"
                     type="text"
                     placeholder="John Doe"
                     onChange={(e) => onChange(e.target)}
                   />
                 </div>
-                <div className="col-span-1 sm:col-span-2 sm:mx-auto">
+                <div className="col-span-1 sm:col-span-2 sm:mx-auto sm:w-full">
                   <Label htmlFor="email">Email</Label>
                   <Input
                     name="email"
-                    className="w-auto"
+                    className="w-auto sm:w-full"
                     type="email"
                     placeholder="Email"
                     onChange={(e) => onChange(e.target)}
@@ -266,7 +266,11 @@ export const Contact = () => {
                   </span>
                 )}
                 <div className="col-span-2 place-self-center">
-                  <ReCAPTCHA sitekey="6Lf6BjIpAAAAALmEEZpuI28moS8Q0zurI-0mxkcz" />
+                  <ReCAPTCHA
+                    className="g-recaptcha"
+                    theme="dark"
+                    sitekey="6Lf6BjIpAAAAALmEEZpuI28moS8Q0zurI-0mxkcz"
+                  />
                 </div>
                 <div className="col-span-2 place-self-center">
                   <Button type="submit" value="Send" variant="secondary">

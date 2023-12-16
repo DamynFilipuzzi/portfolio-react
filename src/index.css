@@ -30,3 +30,9 @@ html {
   /* height of sticky header */
   scroll-padding-top: 60px;
 }
+
+.g-recaptcha iframe {
+  border-radius: 15px;
+  width: 301.5px;
+  height: 76px;
+}
