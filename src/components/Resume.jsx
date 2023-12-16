@@ -9,10 +9,7 @@ function Resume() {
             My Resume
           </h1>
         </div>
-
-        <div className="m-5 max-w-7xl h-[60rem] mx-auto bg-slate-800 ring-slate-900/5 rounded-lg overflow-hidden border-slate-800">
-          <Pdf />
-        </div>
+        <Pdf />
       </section>
     </>
   );
