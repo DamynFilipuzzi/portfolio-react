@@ -98,13 +98,13 @@
     position: absolute;
     right: 0;
     top: 60px;
-    background-color: #0f0f14c7;
-    -webkit-backdrop-filter: blur(24px);
-    backdrop-filter: blur(24px);
     width: 0px;
     height: calc(100vh - 60px);
     transition: all 0.3s ease-in;
     overflow: hidden;
+    background-color: #0f0f14c7;
+    -webkit-backdrop-filter: blur(24px) !important;
+    backdrop-filter: blur(24px) !important;
   }
 
   .nav-items.active {
