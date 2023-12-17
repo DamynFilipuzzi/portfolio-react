@@ -1,6 +1,6 @@
-import Curriculum from "../assets/curriculum-img.png";
-import Curriculum2 from "../assets/curriculum2.png";
-import Curriculum3 from "../assets/curriculum3.png";
+import C1 from "../assets/c1.png";
+import C2 from "../assets/c2.png";
+import C3 from "../assets/c3.png";
 
 import { Badge } from "@/components/ui/badge";
 import Carousel from "./ui/Carousel";
@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/accordion";
 
 function Projects() {
-  let p1slides = [Curriculum, Curriculum2, Curriculum3];
+  const p1slides = [C1, C2, C3];
   return (
     <>
       <section className="projects" id="projects">
@@ -37,7 +37,7 @@ function Projects() {
                 </h1>
               </AccordionTrigger>
               <AccordionContent>
-                <div className="p-5 border-slate-600/25 border-2 rounded-md">
+                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
                   <div className="grid grid-cols-6 gap-4">
                     <div className="col-span-full text-end">
                       <div className="space-x-2">
@@ -52,7 +52,10 @@ function Projects() {
                         <Badge variant="ajax">AJAX</Badge>
                       </div>
                     </div>
-                    <div className="row-span-2 col-span-4 sm:col-span-full">
+                    <div className="row-span-2 col-span-6 sm:col-span-full">
+                      <figure className="p-2 mx-auto sm:float-none float-right sm:basis-full min-w-[45%] min-h-[45%] sm:min-w-0 sm:min-h-0 max-h-md max-w-lg shadow-xl">
+                        <Carousel slides={p1slides} />
+                      </figure>
                       <h2 className="text-left text-2xl font-bold">
                         Project Description
                       </h2>
@@ -67,34 +70,8 @@ function Projects() {
                         tool, the goal is to get to a point where instructors
                         feel they are supported with curriculum development
                         without having to know the ins and outs of pedagogical
-                        needs, or of specific program requirements. As well this
-                        tool allows program coordinators to assess the overall
-                        coverage of learning concepts students receive through
-                        intuitive tables and charts. These reporting metrics can
-                        be downloaded into various formats further reducing the
-                        burden for program coordinators.
+                        needs, or of specific program requirements.
                       </p>
-                    </div>
-                    <div className="col-span-2 row-span-2 sm:row-start-6 sm:row-end-7 sm:col-span-full">
-                      <figure className="sm:mx-auto sm:basis-full min-w-[50%] min-h-[50%] max-h-md max-w-md shadow-xl">
-                        {/* <a
-                          href="https://curriculum.ok.ubc.ca/"
-                          target="_blank"
-                          rel="external"
-                        >
-                          <img
-                            src={Curriculum}
-                            alt="Image of the Curriculum MAPS UBC dashboard"
-                            className="grayscale-[25%] hover:grayscale-0"
-                          />
-                          <figcaption className="text-center text-lg">
-                            Check out the live site
-                          </figcaption>
-                        </a> */}
-                        <Carousel slides={p1slides} />
-                      </figure>
-                    </div>
-                    <div className="row-span-2 col-start-1 col-end-7 sm:row-start-4 sm:row-end-5">
                       <h2 className="text-left text-2xl font-bold">
                         My Role In The Project
                       </h2>
@@ -109,32 +86,30 @@ function Projects() {
                         previous developers.
                       </p>
                     </div>
-                    <div className="col-start-1 col-end-7 sm:mb-2">
+                    <div className="row-span-1 col-span-6 sm:col-span-full">
                       <h2 className="text-left text-2xl font-bold">Links</h2>
-                      <ul className="list-disc space-y-2 m-2.5 text-lg sm:text-sm">
+                      <ul className="list-inside list-disc space-y-2 m-2.5 text-lg sm:text-sm">
                         <li>
-                          <p>
-                            <a
-                              href="https://github.com/bohuie/curriculum/tree/master"
-                              target="_blank"
-                              rel="external"
-                              className="hover:text-cyan-200 text-cyan-500"
-                            >
-                              https://github.com/bohuie/curriculum/tree/master
-                            </a>
-                          </p>
+                          Live Site:{" "}
+                          <a
+                            href="https://curriculum.ok.ubc.ca/"
+                            target="_blank"
+                            rel="external"
+                            className="hover:text-cyan-200 text-cyan-500"
+                          >
+                            https://curriculum.ok.ubc.ca/
+                          </a>
                         </li>
                         <li>
-                          <p>
-                            <a
-                              href="https://curriculum.ok.ubc.ca/"
-                              target="_blank"
-                              rel="external"
-                              className="hover:text-cyan-200 text-cyan-500"
-                            >
-                              https://curriculum.ok.ubc.ca/
-                            </a>
-                          </p>
+                          Repository:{" "}
+                          <a
+                            href="https://github.com/bohuie/curriculum/tree/master"
+                            target="_blank"
+                            rel="external"
+                            className="hover:text-cyan-200 text-cyan-500"
+                          >
+                            https://github.com/bohuie/curriculum/tree/master
+                          </a>
                         </li>
                       </ul>
                     </div>
@@ -170,6 +145,14 @@ function Projects() {
               <AccordionTrigger>
                 <h1 className="text-left text-2xl font-bold text-indigo-500">
                   Portfolio
+                </h1>
+              </AccordionTrigger>
+              <AccordionContent>Filler text for now</AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                <h1 className="text-left text-2xl font-bold text-indigo-500">
+                  Discussion Forum
                 </h1>
               </AccordionTrigger>
               <AccordionContent>Filler text for now</AccordionContent>

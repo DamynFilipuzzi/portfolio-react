@@ -232,7 +232,7 @@ export const Contact = () => {
                 </div>
                 {showErrors && (
                   <span className="bg-slate-900 rounded-lg border-white/20 border-2 py-2 px-6 col-span-2 place-self-center">
-                    <ul className="text-sm text-slate-300 list-image-cross p-1">
+                    <ul className="list-inside text-sm text-slate-300 list-image-cross p-1">
                       {!nameIsValid && (
                         <li className="p-1">
                           Your <span className="font-bold underline">Name</span>{" "}
