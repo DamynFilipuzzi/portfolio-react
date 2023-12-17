@@ -1,5 +1,9 @@
 import Curriculum from "../assets/curriculum-img.png";
+import Curriculum2 from "../assets/curriculum2.png";
+import Curriculum3 from "../assets/curriculum3.png";
+
 import { Badge } from "@/components/ui/badge";
+import Carousel from "./ui/Carousel";
 
 import {
   Accordion,
@@ -9,6 +13,7 @@ import {
 } from "@/components/ui/accordion";
 
 function Projects() {
+  let p1slides = [Curriculum, Curriculum2, Curriculum3];
   return (
     <>
       <section className="projects" id="projects">
@@ -71,8 +76,8 @@ function Projects() {
                       </p>
                     </div>
                     <div className="col-span-2 row-span-2 sm:row-start-6 sm:row-end-7 sm:col-span-full">
-                      <figure className="sm:mx-auto sm:basis-full min-w-[40%] min-h-[40%] max-h-md max-w-md bg-indigo-500 rounded-md border-2 border-slate-900 shadow-xl text-white hover:text-cyan-200 hover:bg-indigo-700 transition duration-300 hover:shadow-2xl hover:scale-105 sm:hover:scale-100">
-                        <a
+                      <figure className="sm:mx-auto sm:basis-full min-w-[50%] min-h-[50%] max-h-md max-w-md shadow-xl">
+                        {/* <a
                           href="https://curriculum.ok.ubc.ca/"
                           target="_blank"
                           rel="external"
@@ -85,7 +90,8 @@ function Projects() {
                           <figcaption className="text-center text-lg">
                             Check out the live site
                           </figcaption>
-                        </a>
+                        </a> */}
+                        <Carousel slides={p1slides} />
                       </figure>
                     </div>
                     <div className="row-span-2 col-start-1 col-end-7 sm:row-start-4 sm:row-end-5">
