@@ -1,6 +1,6 @@
 [![Build and Deploy](https://github.com/DamynFilipuzzi/portfolio-react/actions/workflows/build.yml/badge.svg)](https://github.com/DamynFilipuzzi/portfolio-react/actions/workflows/build.yml)
  
-<h1 style="text-align: center; border: none">Damyn Filipuzzi's Portfolio </h1>
+<h1 align="center">Damyn Filipuzzi's Portfolio </h1>
 
 ## Project Description:
 Showcase some of the recent projects I've worked on. As well when taking on this project I 
