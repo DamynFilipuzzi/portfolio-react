@@ -1,20 +1,24 @@
 [![Build and Deploy](https://github.com/DamynFilipuzzi/portfolio-react/actions/workflows/build.yml/badge.svg)](https://github.com/DamynFilipuzzi/portfolio-react/actions/workflows/build.yml)
+ 
+<h1 style="text-align: center; border: none">Damyn Filipuzzi's Portfolio </h1>
 
-# Damyn Filipuzzi Portfolio
+## Project Description:
+Showcase some of the recent projects I've worked on. As well when taking on this project I 
+originally planned on using HTML, Javascript, CSS and hosting it on github pages. However, 
+after creating a mockup I decided I wanted to use this as a time to better my skills with a 
+more modern front end with React. As well I also decided this would be a good time to better 
+familiarize myself with AWS rather than using github pages.
 
+## Usage
+1. Download Repository
+2. In your terminal enter `npm install`
+3. Finally run `npm run dev`
+
+## Tech Stack:
+React, AWS, JS, Tailwind, HTML, CSS
 
 ## **Todo:**
 - [x] Set up AWS S3 Bucket with CloudFront.
 - [x] Set up CI/CD Pipeline.
-- [ ] Recreate/improve upon original portfolio project.
-- [ ] (Maybe) Create a togglable dark and light mode that initially renders the site depending on the system preset.
+- [x] Recreate/improve upon original portfolio project.
 - [ ] (Maybe) Host additional projects using AWS to show live examples of other work.
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
