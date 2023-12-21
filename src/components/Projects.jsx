@@ -12,6 +12,16 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
+
+
 function Projects() {
   const p1slides = [C1, C2, C3];
   return (
@@ -83,8 +93,8 @@ function Projects() {
                         management, loading optimization, and various other
                         tasks. A large portion of my time was spent creating new
                         database schemas and improving upon designs built by
-                        previous developers. In addition I also built various 
-                        reporting metrics such as graphs and tables to represent 
+                        previous developers. In addition I also built various
+                        reporting metrics such as graphs and tables to represent
                         large amounts of information in a clean and concise way.
                       </p>
                     </div>
@@ -126,7 +136,7 @@ function Projects() {
                 </h1>
               </AccordionTrigger>
               <AccordionContent>
-              <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
+                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
                   <div className="grid grid-cols-6 gap-4">
                     <div className="col-span-full text-end">
                       <div className="space-x-2">
@@ -155,24 +165,24 @@ function Projects() {
                         Project Description
                       </h2>
                       <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        Hot Desking was created to help students, faculty, and staff at the 
-                        University of British Columbia find and reserve available desks around 
-                        campus. This project was created by two separate groups of students as 
+                        Hot Desking was created to help students, faculty, and staff at the
+                        University of British Columbia find and reserve available desks around
+                        campus. This project was created by two separate groups of students as
                         part of a capstone project.
                       </p>
                       <h2 className="text-left text-2xl font-bold">
                         My Role In The Project
                       </h2>
                       <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        This project was split into two groups, admin side and user Side. I was 
+                        This project was split into two groups, admin side and user Side. I was
                         part of the admin side, however my role for this project was to act as
                         the team lead for the 2 teams as I had the most experience as a Web Developer.
-                        Over the course of this project it was my responsibility to ensure that both 
-                        sides of the project could be integrated together seamlessly, this involved 
-                        making sure that each team followed an agreed upon database schema and technical 
-                        stack which I was required to produce. As well one of the requirements was to 
+                        Over the course of this project it was my responsibility to ensure that both
+                        sides of the project could be integrated together seamlessly, this involved
+                        making sure that each team followed an agreed upon database schema and technical
+                        stack which I was required to produce. As well one of the requirements was to
                         produce a containerized project which I choose to use docker. As well it was also
-                        my job to ensure that our team properly tested their code.  
+                        my job to ensure that our team properly tested their code.
                       </p>
                     </div>
                     <div className="row-span-1 col-span-6 sm:col-span-full">
@@ -181,12 +191,12 @@ function Projects() {
                         <li>
                           Repository:{" "}
                           <a
-                            href=""
+                            href="https://github.com/UBCO-COSC-499-Summer-2022/hot-desking-deploy"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:text-cyan-200 text-cyan-500"
                           >
-                            Todo
+                            https://github.com/UBCO-COSC-499-Summer-2022/hot-desking-deploy
                           </a>
                         </li>
                       </ul>
@@ -202,12 +212,12 @@ function Projects() {
                 </h1>
               </AccordionTrigger>
               <AccordionContent>
-              <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
+                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
                   <div className="grid grid-cols-6 gap-4">
                     <div className="col-span-full text-end">
                       <div className="space-x-2">
                         <Badge variant="react">React</Badge>
-                        <Badge variant="s3">AWS S3</Badge>
+                        <Badge variant="aws">AWS S3</Badge>
                         <Badge variant="js">JS</Badge>
                         <Badge variant="tailwind">Tailwind</Badge>
                         <Badge variant="html">HTML</Badge>
@@ -220,12 +230,12 @@ function Projects() {
                         Project Description
                       </h2>
                       <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        Showcase some of the recent projects I&apos;ve worked on. As well 
+                        Showcase some of the recent projects I&apos;ve worked on. As well
                         when taking on this project I originally planned on using HTML,
-                        Javascript, CSS and hosting it on github pages. However, after 
+                        Javascript, CSS and hosting it on github pages. However, after
                         creating a mockup I decided I wanted to use this as a time to better
-                        my skills with a more modern front end with React. As well I also decided 
-                        this would be a good time to better familiarize myself with AWS rather 
+                        my skills with a more modern front end with React. As well I also decided
+                        this would be a good time to better familiarize myself with AWS rather
                         than using github pages.
                       </p>
                     </div>
@@ -235,12 +245,12 @@ function Projects() {
                         <li>
                           Repository:{" "}
                           <a
-                            href=""
+                            href="https://github.com/DamynFilipuzzi/portfolio-react"
                             target="_blank"
                             rel="noreferrer"
                             className="hover:text-cyan-200 text-cyan-500"
                           >
-                            Todo
+                            https://github.com/DamynFilipuzzi/portfolio-react
                           </a>
                         </li>
                       </ul>
