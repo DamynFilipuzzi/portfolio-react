@@ -76,11 +76,43 @@ export default function Carousel({ slides, autoSlideInterval = 3000 }) {
         </button>
         <Dialog>
           <DialogTrigger asChild><button className="h-full w-full" onClick={() => openFullscreen()} /></DialogTrigger>
-          <DialogContent className="max-w-6xl">
+          <DialogContent className="max-w-7xl">
             <DialogHeader>
               <DialogTitle className="p-3"></DialogTitle>
               <DialogDescription>
-                <img src={slides[current]} alt="" />
+                <div className="overflow-hidden relative">
+                  <img src={slides[current]} />
+                  <div className="absolute top-0 h-full w-full justify-between items-center flex">
+                    <button
+                      className="h-full bg-slate-600/20 hover:bg-slate-800/50"
+                      onClick={() => {
+                        previousSlide();
+                        disableAuto();
+                      }}
+                    >
+                      <img
+                        src={Chevron}
+                        width="30px"
+                        className="rotate-180 mx-3 sm:mx-1"
+                        alt="chevron-left"
+                      />
+                    </button>
+                    <button
+                      className="h-full bg-slate-600/20 hover:bg-slate-800/50"
+                      onClick={() => {
+                        nextSlide();
+                        disableAuto();
+                      }}
+                    >
+                      <img
+                        src={Chevron}
+                        width="30px"
+                        className="mx-3 sm:mx-1"
+                        alt="chevron-right"
+                      />
+                    </button>
+                  </div>
+                </div>
               </DialogDescription>
             </DialogHeader>
           </DialogContent>

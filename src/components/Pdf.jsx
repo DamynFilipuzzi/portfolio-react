@@ -6,9 +6,16 @@ import { Button } from "./ui/button";
 function Pdf() {
   const [pdf, setPDF] = useState(null);
   const [width, setWidth] = useState(window.innerWidth);
+  const [failResponse, setFailResponse] = useState(false);
 
   function handleWindowSizeChange() {
     setWidth(window.innerWidth);
+  }
+
+  const handleFailResponse = () => {
+    if (!failResponse) {
+      setFailResponse(!failResponse);
+    }
   }
 
   useEffect(() => {
@@ -22,6 +29,7 @@ function Pdf() {
     fetch(ResumePDF).then((response) => {
       try {
         if (!response.ok) {
+          handleFailResponse();
           throw new Error("PDF file not found");
         }
         const data = response.url;
@@ -36,7 +44,14 @@ function Pdf() {
 
   return (
     <div className="m-5 max-w-7xl mx-auto bg-slate-800 ring-slate-900/5 rounded-lg overflow-hidden border-slate-800">
-      {!pdf && !isMobile && (
+      {failResponse && (
+        <div className="p-3">
+          <p className="pt-2 text-center text-md">
+            There was a problem retrieving the resume, please try reloading the page.
+          </p>
+        </div>
+      )}
+      {!pdf && !isMobile && !failResponse && (
         <div className="p-3">
           <img className="m-auto animate-spin" src={Loader} />
           <p className="pt-2 text-center text-xl animate-pulse">
@@ -44,7 +59,7 @@ function Pdf() {
           </p>
         </div>
       )}
-      {pdf && !isMobile && (
+      {pdf && !isMobile && !failResponse && (
         <div className="w-full h-[60rem]">
           <embed
             className="w-full h-full"
@@ -53,7 +68,7 @@ function Pdf() {
           ></embed>
         </div>
       )}
-      {isMobile && !pdf && (
+      {isMobile && !pdf && !failResponse && (
         <div className="p-3">
           <img className="m-auto animate-spin" src={Loader} />
           <p className="pt-2 text-center text-xl animate-pulse">
@@ -61,7 +76,7 @@ function Pdf() {
           </p>
         </div>
       )}
-      {isMobile && pdf && (
+      {isMobile && pdf && !failResponse && (
         <div className="p-3 m-auto text-center">
           <a href={pdf} target="_blank" rel="noopener noreferrer">
             <Button variant="secondary">Download Resume</Button>
