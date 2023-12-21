@@ -1,5 +1,13 @@
 import Chevron from "../../assets/chevron-r.svg";
 import { useState, useEffect } from "react";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog"
 
 export default function Carousel({ slides, autoSlideInterval = 3000 }) {
   const [current, setCurrent] = useState(0);
@@ -27,6 +35,13 @@ export default function Carousel({ slides, autoSlideInterval = 3000 }) {
     }
   };
 
+  const openFullscreen = () => {
+    console.log("open img : " + current);
+    if (autoSlide) {
+      setAutoSlide(false);
+    }
+  }
+
   useEffect(() => {
     if (!autoSlide) return;
     const slideInterval = setInterval(nextSlide, autoSlideInterval);
@@ -44,7 +59,7 @@ export default function Carousel({ slides, autoSlideInterval = 3000 }) {
         })}
       </div>
 
-      <div className="absolute top-0 h-full w-full justify-between items-center flex">
+      <div className="cursor-pointer absolute top-0 h-full w-full justify-between items-center flex">
         <button
           className="h-full bg-slate-600/20 hover:bg-slate-800/50"
           onClick={() => {
@@ -59,6 +74,17 @@ export default function Carousel({ slides, autoSlideInterval = 3000 }) {
             alt="chevron-left"
           />
         </button>
+        <Dialog>
+          <DialogTrigger asChild><button className="h-full w-full" onClick={() => openFullscreen()} /></DialogTrigger>
+          <DialogContent className="max-w-6xl">
+            <DialogHeader>
+              <DialogTitle className="p-3"></DialogTitle>
+              <DialogDescription>
+                <img src={slides[current]} alt="" />
+              </DialogDescription>
+            </DialogHeader>
+          </DialogContent>
+        </Dialog>
         <button
           className="h-full bg-slate-600/20 hover:bg-slate-800/50"
           onClick={() => {
@@ -84,9 +110,8 @@ export default function Carousel({ slides, autoSlideInterval = 3000 }) {
                 disableAuto();
               }}
               key={"circle" + i}
-              className={`rounded-full border-2 border-black/25 w-4 h-4 cursor-pointer ${
-                i === current ? "bg-white" : "bg-slate-600/30"
-              }`}
+              className={`rounded-full border-2 border-black/25 w-4 h-4 cursor-pointer ${i === current ? "bg-white" : "bg-slate-600/30"
+                }`}
             ></div>
           );
         })}

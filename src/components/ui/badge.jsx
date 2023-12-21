@@ -21,6 +21,11 @@ const badgeVariants = cva(
         ajax: "border-transparent bg-ajax/80 text-slate-50 hover:bg-ajax",
         bootstrap:
           "border-transparent bg-bootstrap/80 text-slate-50 hover:bg-bootstrap",
+        docker: "border-transparent bg-docker/80 text-slate-50 hover:bg-docker",
+        postgresql: "border-transparent bg-postgresql/80 text-slate-50 hover:bg-postgresql",
+        react: "border-transparent bg-react/80 text-slate-50 hover:bg-react",
+        aws: "border-transparent bg-aws/80 text-slate-50 hover:bg-aws",
+        tailwind: "border-transparent bg-tailwind/80 text-slate-50 hover:bg-tailwind",
       },
     },
     defaultVariants: {

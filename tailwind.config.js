@@ -53,6 +53,11 @@ module.exports = {
         css: "#2f54e5",
         ajax: "#3b89bf",
         bootstrap: "#702cf5",
+        docker: '#1d63ed',
+        postgresql: '#336791',
+        react: '#149eca',
+        aws: '#ec912d',
+        tailwind: '#38bdf8',
       },
       keyframes: {
         "accordion-down": {
