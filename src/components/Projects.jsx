@@ -12,16 +12,6 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 
-import {
-  Dialog,
-  DialogContent,
-  DialogDescription,
-  DialogHeader,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog"
-
-
 function Projects() {
   const p1slides = [C1, C2, C3];
   return (
