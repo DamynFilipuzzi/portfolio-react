@@ -24,14 +24,15 @@ function About() {
                 />
               </div>
               <div className="p-8">
-                <div className="p-text uppercase tracking-wide text-lg text-indigo-500 font-semibold">
-                  Hello! &#128515;
+                <div className="p-text uppercase tracking-wide text-xl text-indigo-500 font-semibold">
+                  Hello! &#128516;
                 </div>
                 <p className="mt-2 text-slate-300 text-md sm:text-sm">
-                  I&apos;m Damyn, a passionate computer science graduate with over a
-                  year of hands-on experience in the dynamic world of full-stack
-                  web development. My journey in the tech realm has led me to
-                  specialize in crafting seamless and efficient solutions.
+                  I&apos;m Damyn, a passionate computer science graduate with
+                  over a year of hands-on experience in the dynamic world of
+                  full-stack web development. My journey in the tech realm has
+                  led me to specialize in crafting seamless and efficient
+                  solutions.
                 </p>
               </div>
             </div>
@@ -55,7 +56,8 @@ function About() {
                 With a solid foundation in both front-end and back-end
                 technologies, I bring a holistic approach to web development.
                 From designing intuitive user interfaces to optimizing database
-                performance, I&apos;m committed to delivering end-to-end solutions.
+                performance, I&apos;m committed to delivering end-to-end
+                solutions.
               </p>
             </div>
             <div className="max-w-sm mt-10 bg-slate-800 rounded-lg px-6 py-6 ring-1 ring-slate-900/5 shadow-xl sm:hover:scale-100 hover:scale-110 transition-all duration-500">
