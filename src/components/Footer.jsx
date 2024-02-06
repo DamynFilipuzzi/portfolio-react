@@ -7,15 +7,14 @@ function Footer() {
       <footer className="bg-footer w-full h-44 sm:h-52 grid grid-cols-3 gap-6 justify-items-center place-content-center">
         <div className="flex items-center p-2">
           <p className="p-2">
-            Damyn Filipuzzi © {new Date().getFullYear()}.{" "}
+            Damyn Filipuzzi © {new Date().getFullYear()}. Vectors and icons by{" "}
             <a
+              className="underline"
+              href="https://www.svgrepo.com"
               target="_blank"
               rel="external"
-              href="https://github.com/DamynFilipuzzi/portfolio-react#readme"
             >
-              <span className="underline">
-                Licensed icons can be found here
-              </span>
+              SVG Repo
             </a>
           </p>
         </div>
