@@ -31,6 +31,9 @@ const badgeVariants = cva(
         firebase:
           "border-transparent bg-firebase/80 text-slate-50 hover:bg-firebase",
         nodejs: "border-transparent bg-nodejs/80 text-slate-50 hover:bg-nodejs",
+        nextjs: "border-transparent bg-nextjs/80 text-slate-50 hover:bg-nextjs",
+        vercel: "border-transparent bg-vercel/80 text-slate-50 hover:bg-vercel",
+        python: "border-transparent bg-python/80 text-slate-50 hover:bg-python",
       },
     },
     defaultVariants: {

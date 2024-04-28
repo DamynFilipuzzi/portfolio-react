@@ -1,10 +1,9 @@
 import C1 from "../assets/c1.png";
 import C2 from "../assets/c2.png";
 import C3 from "../assets/c3.png";
-import D1 from "../assets/ddr1.png";
-import D2 from "../assets/ddr2.png";
-import D3 from "../assets/ddr3.png";
-import D4 from "../assets/ddr4.png";
+import SD1 from "../assets/sd1.png";
+import SD2 from "../assets/sd2.png";
+import SD3 from "../assets/sd3.png";
 
 import { Badge } from "@/components/ui/badge";
 import Carousel from "./ui/Carousel";
@@ -18,7 +17,7 @@ import {
 
 function Projects() {
   const p1slides = [C1, C2, C3];
-  const p2slides = [D1, D2, D3, D4];
+  const p2slides = [SD1, SD2, SD3];
   return (
     <>
       <section className="projects" id="projects">
@@ -49,7 +48,7 @@ function Projects() {
                         <Badge variant="laravel">Laravel</Badge>
                         <Badge variant="php">PHP</Badge>
                         <Badge variant="mysql">MySQL</Badge>
-                        <Badge variant="js">JS</Badge>
+                        <Badge variant="js">Javascript</Badge>
                         <Badge variant="jquery">JQuery</Badge>
                         <Badge variant="bootstrap">Bootstrap</Badge>
                         <Badge variant="html">HTML</Badge>
@@ -65,22 +64,15 @@ function Projects() {
                         Project Description
                       </h2>
                       <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        Curriculum MAP was created to help course instructors
-                        and program coordinators at the University of British
-                        Columbia better understand how to suit the needs of
-                        students. This online tool provides flexibility to meet
-                        the needs of faculty in any point of their development
-                        to generate ideas, create, and evaluate new or existing
-                        courses and programs, using backward design. With this
-                        tool, the goal is to get to a point where instructors
-                        feel they are supported with curriculum development
-                        without having to know the ins and outs of pedagogical
-                        needs, or of specific program requirements.
+                        Curriculum MAP was created to help align course
+                        instructors with program coordinators at the University
+                        of British Columbia. The web application has over 200
+                        users with a 99.9% uptime.
                       </p>
                       <h2 className="text-left text-2xl font-bold">
                         My Role In The Project
                       </h2>
-                      <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
+                      {/* <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
                         My role in this team was one of two full stack web
                         developers. For this project I was responsible for
                         various tasks such as frontend and backend development,
@@ -91,7 +83,32 @@ function Projects() {
                         previous developers. In addition I also built various
                         reporting metrics such as graphs and tables to represent
                         large amounts of information in a clean and concise way.
-                      </p>
+                      </p> */}
+                      <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
+                        <li>
+                          Responsibilities included full-stack development,
+                          database administration, data security, vulnerability
+                          management, fixing bugs, and optimization of loading
+                          processes
+                        </li>
+                        <li>
+                          The project is built on Laravel framework with PHP
+                          backend, requiring Javascript, HTML, and CSS for the
+                          front-end, and Bootstrap for UI components
+                        </li>
+                        <li>
+                          Developed dynamic and filterable reporting metrics
+                          such as graphs, and tables for clear and concise
+                          information presentation. As well as optimizing the
+                          loading of metrics using AJAX fetch requests to
+                          improve page load times.
+                        </li>
+                        <li>
+                          I was also responsible for fixing and improving site
+                          vulnerability and security, such as Cross-site
+                          scripting and SQL injection.
+                        </li>
+                      </ul>
                     </div>
                     <div className="row-span-1 col-span-6 sm:col-span-full">
                       <h2 className="text-left text-2xl font-bold">Links</h2>
@@ -139,7 +156,7 @@ function Projects() {
                         <Badge variant="php">PHP</Badge>
                         <Badge variant="docker">Docker</Badge>
                         <Badge variant="postgresql">PostgreSQL</Badge>
-                        <Badge variant="js">JS</Badge>
+                        <Badge variant="js">Javascript</Badge>
                         <Badge variant="jquery">JQuery</Badge>
                         <Badge variant="bootstrap">Bootstrap</Badge>
                         <Badge variant="html">HTML</Badge>
@@ -160,16 +177,15 @@ function Projects() {
                         Project Description
                       </h2>
                       <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        Hot Desking was created to help students, faculty, and
-                        staff at the University of British Columbia find and
-                        reserve available desks around campus. This project was
-                        created by two separate groups of students as part of a
-                        capstone project.
+                        Hot Desking was developed as a combined capstone project
+                        by two student groups to facilitate desk finding and
+                        reservation for students, faculty, and staff at the
+                        University of British Columbia.
                       </p>
                       <h2 className="text-left text-2xl font-bold">
                         My Role In The Project
                       </h2>
-                      <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
+                      {/* <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
                         This project was split into two groups, admin side and
                         user Side. I was part of the admin side, however my role
                         for this project was to act as the team lead for the 2
@@ -183,7 +199,31 @@ function Projects() {
                         a containerized project which I choose to use docker. As
                         well it was also my job to ensure that our team properly
                         tested their code.
-                      </p>
+                      </p> */}
+                      <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
+                        <li>
+                          Took a leadership role on the admin side, while
+                          overseeing the user side team. Built the base for both
+                          teams to build on and containerized the project with
+                          Docker.
+                        </li>
+                        <li>
+                          Developed the CI/CD pipeline using GitHub Actions and
+                          Drone CI for automated deployment and testing.
+                        </li>
+                        <li>
+                          Ensured thorough code testing practices and reviews
+                          before code integration, achieving a code coverage
+                          rate of 76%. Additionally, implemented usability
+                          testing to ensure a user-centered interaction design
+                          approach.
+                        </li>
+                        <li>
+                          Responsible for integrating admin and user sides,
+                          enforcing standardized database schema and technical
+                          stack for both teams to follow.
+                        </li>
+                      </ul>
                     </div>
                     <div className="row-span-1 col-span-6 sm:col-span-full">
                       <h2 className="text-left text-2xl font-bold">Links</h2>
@@ -208,6 +248,95 @@ function Projects() {
             <AccordionItem value="item-3">
               <AccordionTrigger>
                 <h1 className="text-left text-2xl font-bold text-indigo-500">
+                  Steam Deals -
+                  <span className="italic"> (Work in progress)</span>
+                </h1>
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
+                  <div className="grid grid-cols-6 gap-4">
+                    <div className="col-span-full text-end">
+                      <div className="space-x-2">
+                        <Badge variant="nextjs">NextJS</Badge>
+                        <Badge variant="react">React</Badge>
+                        <Badge variant="js">Javascript</Badge>
+                        <Badge variant="postgresql">PostgreSQL</Badge>
+                        <Badge variant="python">Python</Badge>
+                        <Badge variant="vercel">Vercel</Badge>
+                        <Badge variant="html">HTML</Badge>
+                        <Badge variant="css">CSS</Badge>
+                        <Badge variant="tailwind">Tailwind</Badge>
+                      </div>
+                    </div>
+                    <div className="row-span-2 col-span-6 sm:col-span-full">
+                      <figure className="p-2 mx-auto sm:float-none float-right sm:basis-full min-w-[45%] min-h-[45%] sm:min-w-0 sm:min-h-0 max-h-md max-w-lg shadow-xl">
+                        <Carousel slides={p2slides} />
+                      </figure>
+                      <h2 className="text-left text-2xl font-bold">
+                        Project Description
+                      </h2>
+                      <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
+                        <li>
+                          Steam Deals aims to help gamers when choosing the best
+                          time to purchase a game. The site shows users a
+                          historical record of all 72,000+ games that Steam
+                          sells.
+                        </li>
+                        <li>
+                          Python scripts run with Cron scheduling to pull price
+                          changes, new game listings, reviews, and game
+                          descriptions.
+                        </li>
+                        <li>
+                          Hosted on the Vercel platform, written in Next.js for
+                          the backend, and React.js for the front-end library.
+                          Implemented with tRPC and Prisma for ORM.
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="row-span-1 col-span-6 sm:col-span-full">
+                      <h2 className="text-left text-2xl font-bold">Links</h2>
+                      <ul className="list-inside list-disc space-y-2 m-2.5 text-lg sm:text-sm">
+                        <li>
+                          Repository:{" "}
+                          <a
+                            href="https://github.com/DamynFilipuzzi/steam-deals"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:text-cyan-200 text-cyan-500"
+                          >
+                            https://github.com/DamynFilipuzzi/steam-deals
+                          </a>
+                          ,{" "}
+                          <a
+                            href="https://github.com/DamynFilipuzzi/scraper-py"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:text-cyan-200 text-cyan-500"
+                          >
+                            https://github.com/DamynFilipuzzi/scraper-py
+                          </a>
+                        </li>
+                        <li>
+                          Live Site:{" "}
+                          <a
+                            href="https://www.steamdeals.ca/"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:text-cyan-200 text-cyan-500"
+                          >
+                            https://www.steamdeals.ca/
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+            <AccordionItem value="item-4">
+              <AccordionTrigger>
+                <h1 className="text-left text-2xl font-bold text-indigo-500">
                   Portfolio
                 </h1>
               </AccordionTrigger>
@@ -218,7 +347,7 @@ function Projects() {
                       <div className="space-x-2">
                         <Badge variant="react">React</Badge>
                         <Badge variant="aws">AWS S3</Badge>
-                        <Badge variant="js">JS</Badge>
+                        <Badge variant="js">Javascript</Badge>
                         <Badge variant="tailwind">Tailwind</Badge>
                         <Badge variant="html">HTML</Badge>
                         <Badge variant="css">CSS</Badge>
@@ -229,7 +358,7 @@ function Projects() {
                       <h2 className="text-left text-2xl font-bold">
                         Project Description
                       </h2>
-                      <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
+                      {/* <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
                         Showcase some of the recent projects I&apos;ve worked
                         on. As well when taking on this project I originally
                         planned on using HTML, Javascript, CSS and hosting it on
@@ -238,7 +367,20 @@ function Projects() {
                         a more modern front end with React. As well I also
                         decided this would be a good time to better familiarize
                         myself with AWS rather than using github pages.
-                      </p>
+                      </p> */}
+                      <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
+                        <li>
+                          Created a project to showcase work while adhering to
+                          web standards and SEO practices
+                        </li>
+                        <li>
+                          Used project to enhance proficiency in ReactJS and
+                          gain expertise in AWS S3
+                        </li>
+                        <li>
+                          Dynamic rendering managed client-side with JavaScript
+                        </li>
+                      </ul>
                     </div>
                     <div className="row-span-1 col-span-6 sm:col-span-full">
                       <h2 className="text-left text-2xl font-bold">Links</h2>
@@ -252,65 +394,6 @@ function Projects() {
                             className="hover:text-cyan-200 text-cyan-500"
                           >
                             https://github.com/DamynFilipuzzi/portfolio-react
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-4">
-              <AccordionTrigger>
-                <h1 className="text-left text-2xl font-bold text-indigo-500">
-                  DDR Discussion Forum
-                </h1>
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
-                  <div className="grid grid-cols-6 gap-4">
-                    <div className="col-span-full text-end">
-                      <div className="space-x-2">
-                        <Badge variant="react">React</Badge>
-                        <Badge variant="js">JS</Badge>
-                        <Badge variant="mysql">MySQL</Badge>
-                        <Badge variant="firebase">Firebase</Badge>
-                        <Badge variant="nodejs">NodeJS</Badge>
-                        <Badge variant="html">HTML</Badge>
-                        <Badge variant="css">CSS</Badge>
-                      </div>
-                    </div>
-                    <div className="row-span-2 col-span-6 sm:col-span-full">
-                      <figure className="p-2 mx-auto sm:float-none float-right sm:basis-full min-w-[45%] min-h-[45%] sm:min-w-0 sm:min-h-0 max-h-md max-w-lg shadow-xl">
-                        <Carousel slides={p2slides} />
-                      </figure>
-                      <h2 className="text-left text-2xl font-bold">
-                        Project Description
-                      </h2>
-                      <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        This was the final project for the Web Programming
-                        course (COSC 360). The primary objective was to design a
-                        platform enabling unregistered users to access posts,
-                        while registered users could actively engage by creating
-                        and commenting on posts. Drawing inspiration from
-                        renowned web forums such as Reddit, the project
-                        incorporated a comparable design and functionalities.
-                        Employing node.js for the backend and React as the
-                        front-end library.
-                      </p>
-                    </div>
-                    <div className="row-span-1 col-span-6 sm:col-span-full">
-                      <h2 className="text-left text-2xl font-bold">Links</h2>
-                      <ul className="list-inside list-disc space-y-2 m-2.5 text-lg sm:text-sm">
-                        <li>
-                          Repository:{" "}
-                          <a
-                            href="https://github.com/daultonb/COSC360Project"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-cyan-200 text-cyan-500"
-                          >
-                            https://github.com/daultonb/COSC360Project
                           </a>
                         </li>
                       </ul>

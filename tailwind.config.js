@@ -47,7 +47,7 @@ module.exports = {
         laravel: "#F9322C",
         php: "#4F5B93",
         mysql: "#00758f",
-        js: "#efd81d",
+        js: "#f48131",
         jquery: "#78cff5",
         html: "#d35c3b",
         css: "#2f54e5",
@@ -60,6 +60,9 @@ module.exports = {
         tailwind: "#38bdf8",
         firebase: "#ffcc30",
         nodejs: "#4d9942",
+        vercel: "#0a0a0a",
+        nextjs: "#4d9942",
+        python: "#f7ce43",
       },
       keyframes: {
         "accordion-down": {
