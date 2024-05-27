@@ -72,18 +72,6 @@ function Projects() {
                       <h2 className="text-left text-2xl font-bold">
                         My Role In The Project
                       </h2>
-                      {/* <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        My role in this team was one of two full stack web
-                        developers. For this project I was responsible for
-                        various tasks such as frontend and backend development,
-                        database management, data security and vulnerability
-                        management, loading optimization, and various other
-                        tasks. A large portion of my time was spent creating new
-                        database schemas and improving upon designs built by
-                        previous developers. In addition I also built various
-                        reporting metrics such as graphs and tables to represent
-                        large amounts of information in a clean and concise way.
-                      </p> */}
                       <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
                         <li>
                           Responsibilities included full-stack development,
@@ -144,112 +132,7 @@ function Projects() {
             <AccordionItem value="item-2">
               <AccordionTrigger>
                 <h1 className="text-left text-2xl font-bold text-indigo-500">
-                  Hot Desking
-                </h1>
-              </AccordionTrigger>
-              <AccordionContent>
-                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
-                  <div className="grid grid-cols-6 gap-4">
-                    <div className="col-span-full text-end">
-                      <div className="space-x-2">
-                        <Badge variant="laravel">Laravel</Badge>
-                        <Badge variant="php">PHP</Badge>
-                        <Badge variant="docker">Docker</Badge>
-                        <Badge variant="postgresql">PostgreSQL</Badge>
-                        <Badge variant="js">Javascript</Badge>
-                        <Badge variant="jquery">JQuery</Badge>
-                        <Badge variant="bootstrap">Bootstrap</Badge>
-                        <Badge variant="html">HTML</Badge>
-                        <Badge variant="css">CSS</Badge>
-                        <Badge variant="ajax">AJAX</Badge>
-                      </div>
-                    </div>
-                    <div className="row-span-2 col-span-6 sm:col-span-full">
-                      <figure className="p-2 mx-auto sm:float-none float-right sm:basis-full min-w-[45%] min-h-[45%] sm:min-w-0 sm:min-h-0 max-h-md max-w-lg shadow-xl">
-                        <iframe
-                          className="w-full aspect-video"
-                          src="https://www.youtube.com/embed/eOPJkVcQDIw?si=NcI5INAdbcH5eP7Z"
-                          title="YouTube video player"
-                          allowFullScreen="allowfullscreen"
-                        ></iframe>
-                      </figure>
-                      <h2 className="text-left text-2xl font-bold">
-                        Project Description
-                      </h2>
-                      <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        Hot Desking was developed as a combined capstone project
-                        by two student groups to facilitate desk finding and
-                        reservation for students, faculty, and staff at the
-                        University of British Columbia.
-                      </p>
-                      <h2 className="text-left text-2xl font-bold">
-                        My Role In The Project
-                      </h2>
-                      {/* <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        This project was split into two groups, admin side and
-                        user Side. I was part of the admin side, however my role
-                        for this project was to act as the team lead for the 2
-                        teams as I had the most experience as a Web Developer.
-                        Over the course of this project it was my responsibility
-                        to ensure that both sides of the project could be
-                        integrated together seamlessly, this involved making
-                        sure that each team followed an agreed upon database
-                        schema and technical stack which I was required to
-                        produce. As well one of the requirements was to produce
-                        a containerized project which I choose to use docker. As
-                        well it was also my job to ensure that our team properly
-                        tested their code.
-                      </p> */}
-                      <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
-                        <li>
-                          Took a leadership role on the admin side, while
-                          overseeing the user side team. Built the base for both
-                          teams to build on and containerized the project with
-                          Docker.
-                        </li>
-                        <li>
-                          Developed the CI/CD pipeline using GitHub Actions and
-                          Drone CI for automated deployment and testing.
-                        </li>
-                        <li>
-                          Ensured thorough code testing practices and reviews
-                          before code integration, achieving a code coverage
-                          rate of 76%. Additionally, implemented usability
-                          testing to ensure a user-centered interaction design
-                          approach.
-                        </li>
-                        <li>
-                          Responsible for integrating admin and user sides,
-                          enforcing standardized database schema and technical
-                          stack for both teams to follow.
-                        </li>
-                      </ul>
-                    </div>
-                    <div className="row-span-1 col-span-6 sm:col-span-full">
-                      <h2 className="text-left text-2xl font-bold">Links</h2>
-                      <ul className="list-inside list-disc space-y-2 m-2.5 text-lg sm:text-sm">
-                        <li>
-                          Repository:{" "}
-                          <a
-                            href="https://github.com/UBCO-COSC-499-Summer-2022/hot-desking-deploy"
-                            target="_blank"
-                            rel="noreferrer"
-                            className="hover:text-cyan-200 text-cyan-500"
-                          >
-                            https://github.com/UBCO-COSC-499-Summer-2022/hot-desking-deploy
-                          </a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-            <AccordionItem value="item-3">
-              <AccordionTrigger>
-                <h1 className="text-left text-2xl font-bold text-indigo-500">
-                  Steam Deals -
-                  <span className="italic"> (Work in progress)</span>
+                  Steam Deals
                 </h1>
               </AccordionTrigger>
               <AccordionContent>
@@ -334,6 +217,96 @@ function Projects() {
                 </div>
               </AccordionContent>
             </AccordionItem>
+            <AccordionItem value="item-3">
+              <AccordionTrigger>
+                <h1 className="text-left text-2xl font-bold text-indigo-500">
+                  Hot Desking
+                </h1>
+              </AccordionTrigger>
+              <AccordionContent>
+                <div className="p-5 border-slate-600/25 border-x-2 rounded-md">
+                  <div className="grid grid-cols-6 gap-4">
+                    <div className="col-span-full text-end">
+                      <div className="space-x-2">
+                        <Badge variant="laravel">Laravel</Badge>
+                        <Badge variant="php">PHP</Badge>
+                        <Badge variant="docker">Docker</Badge>
+                        <Badge variant="postgresql">PostgreSQL</Badge>
+                        <Badge variant="js">Javascript</Badge>
+                        <Badge variant="jquery">JQuery</Badge>
+                        <Badge variant="bootstrap">Bootstrap</Badge>
+                        <Badge variant="html">HTML</Badge>
+                        <Badge variant="css">CSS</Badge>
+                        <Badge variant="ajax">AJAX</Badge>
+                      </div>
+                    </div>
+                    <div className="row-span-2 col-span-6 sm:col-span-full">
+                      <figure className="p-2 mx-auto sm:float-none float-right sm:basis-full min-w-[45%] min-h-[45%] sm:min-w-0 sm:min-h-0 max-h-md max-w-lg shadow-xl">
+                        <iframe
+                          className="w-full aspect-video"
+                          src="https://www.youtube.com/embed/eOPJkVcQDIw?si=NcI5INAdbcH5eP7Z"
+                          title="YouTube video player"
+                          allowFullScreen="allowfullscreen"
+                        ></iframe>
+                      </figure>
+                      <h2 className="text-left text-2xl font-bold">
+                        Project Description
+                      </h2>
+                      <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
+                        Hot Desking was developed as a combined capstone project
+                        by two student groups to facilitate desk finding and
+                        reservation for students, faculty, and staff at the
+                        University of British Columbia.
+                      </p>
+                      <h2 className="text-left text-2xl font-bold">
+                        My Role In The Project
+                      </h2>
+                      <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
+                        <li>
+                          Took a leadership role on the admin side, while
+                          overseeing the user side team. Built the base for both
+                          teams to build on and containerized the project with
+                          Docker.
+                        </li>
+                        <li>
+                          Developed the CI/CD pipeline using GitHub Actions and
+                          Drone CI for automated deployment and testing.
+                        </li>
+                        <li>
+                          Ensured thorough code testing practices and reviews
+                          before code integration, achieving a code coverage
+                          rate of 76%. Additionally, implemented usability
+                          testing to ensure a user-centered interaction design
+                          approach.
+                        </li>
+                        <li>
+                          Responsible for integrating admin and user sides,
+                          enforcing standardized database schema and technical
+                          stack for both teams to follow.
+                        </li>
+                      </ul>
+                    </div>
+                    <div className="row-span-1 col-span-6 sm:col-span-full">
+                      <h2 className="text-left text-2xl font-bold">Links</h2>
+                      <ul className="list-inside list-disc space-y-2 m-2.5 text-lg sm:text-sm">
+                        <li>
+                          Repository:{" "}
+                          <a
+                            href="https://github.com/UBCO-COSC-499-Summer-2022/hot-desking-deploy"
+                            target="_blank"
+                            rel="noreferrer"
+                            className="hover:text-cyan-200 text-cyan-500"
+                          >
+                            https://github.com/UBCO-COSC-499-Summer-2022/hot-desking-deploy
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </AccordionContent>
+            </AccordionItem>
+
             <AccordionItem value="item-4">
               <AccordionTrigger>
                 <h1 className="text-left text-2xl font-bold text-indigo-500">
