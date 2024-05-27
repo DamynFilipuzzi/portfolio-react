@@ -283,9 +283,9 @@ function Projects() {
                           sells.
                         </li>
                         <li>
-                          Python scripts run with Cron scheduling to pull price
-                          changes, new game listings, reviews, and game
-                          descriptions.
+                          Containerized Python scripts run with Cron scheduling
+                          to pull price changes, new game listings, reviews, and
+                          game descriptions. Hosted on AWS EC2.
                         </li>
                         <li>
                           Hosted on the Vercel platform, written in Next.js for
@@ -358,16 +358,6 @@ function Projects() {
                       <h2 className="text-left text-2xl font-bold">
                         Project Description
                       </h2>
-                      {/* <p className="text-slate-300 text-lg sm:text-sm m-2.5 text-left">
-                        Showcase some of the recent projects I&apos;ve worked
-                        on. As well when taking on this project I originally
-                        planned on using HTML, Javascript, CSS and hosting it on
-                        github pages. However, after creating a mockup I decided
-                        I wanted to use this as a time to better my skills with
-                        a more modern front end with React. As well I also
-                        decided this would be a good time to better familiarize
-                        myself with AWS rather than using github pages.
-                      </p> */}
                       <ul className="text-slate-300 text-lg sm:text-sm m-2.5 text-left list-disc">
                         <li>
                           Created a project to showcase work while adhering to
