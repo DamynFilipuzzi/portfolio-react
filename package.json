@@ -9,7 +9,7 @@
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
         "sync": "aws s3 sync ./dist s3://damyn.me/",
         "invalidate": "aws cloudfront create-invalidation --distribution-id EA3MYV3JW2XY4 --paths /*",
-        "preview": "vite preview",
+        "preview": "vite preview"
     },
     "dependencies": {
         "@emailjs/browser": "^3.11.0",
